@@ -1,5 +1,2 @@
-# Raw CFPB data (7.7GB unzipped CSV)
-data/complaints.csv
-
-# Allow complaints.csv.zip (tracked via Git LFS)
-!data/complaints.csv.zip
+# Raw CFPB data
+data/
