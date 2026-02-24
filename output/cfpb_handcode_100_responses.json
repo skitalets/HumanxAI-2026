@@ -1,0 +1,902 @@
+{
+  "1": {
+    "narrative_number": 1,
+    "complaint_id": 10352562,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Form letter for identity theft, no relationship with the institution"
+  },
+  "2": {
+    "narrative_number": 2,
+    "complaint_id": 13867292,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Situation of identity theft, no existing relationship with Chase"
+  },
+  "3": {
+    "narrative_number": 3,
+    "complaint_id": 7441427,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Mostly factual with some evaluative content (\"extremely frustrated\", expectations not met after the first round of fraud claims)"
+  },
+  "4": {
+    "narrative_number": 4,
+    "complaint_id": 9983591,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.5,
+    "confidence": "HIGH",
+    "justification": "Frustration with processes and personnel, service did not meet expectations"
+  },
+  "5": {
+    "narrative_number": 5,
+    "complaint_id": 1673075,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.4,
+    "confidence": "HIGH",
+    "justification": "Mostly factual with some evaluative language: frustration, expectations not met"
+  },
+  "6": {
+    "narrative_number": 6,
+    "complaint_id": 4121639,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "7": {
+    "narrative_number": 7,
+    "complaint_id": 6941723,
+    "classification": "DELEGATIVE",
+    "delegative_score": 0.7,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Language suggesting moral betrayal, references to Wells Fargo staff justifying their behavior (\"did not do anything wrong\"), similar moral language directed at CFPB (\"implore\")."
+  },
+  "8": {
+    "narrative_number": 8,
+    "complaint_id": 9710759,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft with no relationship to bank"
+  },
+  "9": {
+    "narrative_number": 9,
+    "complaint_id": 10717654,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual, no evaluative or delegative language"
+  },
+  "10": {
+    "narrative_number": 10,
+    "complaint_id": 3594081,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0.1,
+    "confidence": "HIGH",
+    "justification": "Almost entirely factual, only the \"deliberately refused\" language suggests evaluative trust"
+  },
+  "11": {
+    "narrative_number": 11,
+    "complaint_id": 2168233,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Seems to be identity theft only, no evaluative or delegative language, difficult to parse."
+  },
+  "12": {
+    "narrative_number": 12,
+    "complaint_id": 6278914,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "HIGH",
+    "justification": "Almost entirely factual with small amounts of evaluative language referencing the legality of lender's behavior"
+  },
+  "13": {
+    "narrative_number": 13,
+    "complaint_id": 7872772,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.8,
+    "confidence": "HIGH",
+    "justification": "Language is evaluative plus factual, exclamation points and all-caps suggest frustration and dashed expectations"
+  },
+  "14": {
+    "narrative_number": 14,
+    "complaint_id": 5019165,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Almost entirely factual"
+  },
+  "15": {
+    "narrative_number": 15,
+    "complaint_id": 4669725,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "LOW",
+    "justification": "Some language suggesting frustrated expectations and attempts to follow the lender's procedures, but largely factual and scattered"
+  },
+  "16": {
+    "narrative_number": 16,
+    "complaint_id": 3967343,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "LOW",
+    "justification": "Clearly frustrated with processes and lack of human responsiveness, but most of this is factual"
+  },
+  "17": {
+    "narrative_number": 17,
+    "complaint_id": 11427908,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.7,
+    "confidence": "HIGH",
+    "justification": "Language about frustrated expectations and difficulty with the lender's processes."
+  },
+  "18": {
+    "narrative_number": 18,
+    "complaint_id": 5270484,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0.1,
+    "confidence": "HIGH",
+    "justification": "Mostly factual, one reference to fairness"
+  },
+  "19": {
+    "narrative_number": 19,
+    "complaint_id": 3615966,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0.1,
+    "evaluative_score": 0.6,
+    "confidence": "HIGH",
+    "justification": "Clearly frustrated, \"No one can help me\", \"no one knows what's going on\"."
+  },
+  "20": {
+    "narrative_number": 20,
+    "complaint_id": 3097447,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Entirely factual"
+  },
+  "21": {
+    "narrative_number": 21,
+    "complaint_id": 3100978,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.7,
+    "confidence": "HIGH",
+    "justification": "Entirely about the complainant's frustration with process and violation of expectations"
+  },
+  "22": {
+    "narrative_number": 22,
+    "complaint_id": 2236062,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  },
+  "23": {
+    "narrative_number": 23,
+    "complaint_id": 3453212,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.6,
+    "confidence": "HIGH",
+    "justification": "All evaluative language, processes are \"insane\" and frustrating, but no delegative relationship"
+  },
+  "24": {
+    "narrative_number": 24,
+    "complaint_id": 11659701,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.7,
+    "confidence": "HIGH",
+    "justification": "All language is evaluative, with few facts -- frustration with the bank not performing"
+  },
+  "25": {
+    "narrative_number": 25,
+    "complaint_id": 7132764,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.5,
+    "confidence": "HIGH",
+    "justification": "Failure to live up to promises by the lender"
+  },
+  "26": {
+    "narrative_number": 26,
+    "complaint_id": 6528614,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "MEDIUM",
+    "justification": "Almost entirely factual, hard to discern any frustration even"
+  },
+  "27": {
+    "narrative_number": 27,
+    "complaint_id": 5807155,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual only"
+  },
+  "28": {
+    "narrative_number": 28,
+    "complaint_id": 14753581,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Clear frustration and a little bit of expectations not met"
+  },
+  "29": {
+    "narrative_number": 29,
+    "complaint_id": 3083996,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Factual"
+  },
+  "30": {
+    "narrative_number": 30,
+    "complaint_id": 3635108,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Factual"
+  },
+  "31": {
+    "narrative_number": 31,
+    "complaint_id": 2904388,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0.1,
+    "evaluative_score": 0.4,
+    "confidence": "MEDIUM",
+    "justification": "Mostly frustrated with poor process and service -- performance expectations not met. A little bit of moral language (\"taking advantage\", \"grievance\")."
+  },
+  "32": {
+    "narrative_number": 32,
+    "complaint_id": 5860314,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Identity theft, no relationship"
+  },
+  "33": {
+    "narrative_number": 33,
+    "complaint_id": 5613912,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Identity theft, no relationship"
+  },
+  "34": {
+    "narrative_number": 34,
+    "complaint_id": 3640736,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0.1,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Frustrated expectations on performance, a little bit of moral language (\"isn't fair\")."
+  },
+  "35": {
+    "narrative_number": 35,
+    "complaint_id": 2710085,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "36": {
+    "narrative_number": 36,
+    "complaint_id": 4005689,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.8,
+    "confidence": "HIGH",
+    "justification": "Unmet expectations and frustrations with poor service. Moral language refers to industry standards, not the relationship with the lender"
+  },
+  "37": {
+    "narrative_number": 37,
+    "complaint_id": 7236336,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual with implied frustration"
+  },
+  "38": {
+    "narrative_number": 38,
+    "complaint_id": 7241493,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No standing relationship"
+  },
+  "39": {
+    "narrative_number": 39,
+    "complaint_id": 2723943,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "40": {
+    "narrative_number": 40,
+    "complaint_id": 5583783,
+    "classification": "DELEGATIVE",
+    "delegative_score": 1,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "All the language is about trust, honesty, dishonesty, greed, etc. Very relational language, including a moral reference to the bank itself (\"gaslighting\")."
+  },
+  "41": {
+    "narrative_number": 41,
+    "complaint_id": 4260816,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  },
+  "42": {
+    "narrative_number": 42,
+    "complaint_id": 17900042,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Mostly factual with some language about performance expectations not met. Most of the standards are external (federal law) however."
+  },
+  "43": {
+    "narrative_number": 43,
+    "complaint_id": 1974801,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.7,
+    "confidence": "HIGH",
+    "justification": "High frustration with some reference to expectations of the lender, some to external standards (federal law)."
+  },
+  "44": {
+    "narrative_number": 44,
+    "complaint_id": 15948787,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "45": {
+    "narrative_number": 45,
+    "complaint_id": 5065894,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "46": {
+    "narrative_number": 46,
+    "complaint_id": 4104902,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.7,
+    "confidence": "HIGH",
+    "justification": "Frustration with performance and unmet expectations. Lots of frustration language but everything concerns incorrect information and processes, not delegation of trust"
+  },
+  "47": {
+    "narrative_number": 47,
+    "complaint_id": 18397481,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.6,
+    "confidence": "HIGH",
+    "justification": "All evaluative language, performance expectations not met with respect to a specific card benefit"
+  },
+  "48": {
+    "narrative_number": 48,
+    "complaint_id": 3122004,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Concern is with lender's attorney, not the primary relationship between customer and bank"
+  },
+  "49": {
+    "narrative_number": 49,
+    "complaint_id": 1923767,
+    "classification": "DELEGATIVE",
+    "delegative_score": 0.2,
+    "evaluative_score": 0.1,
+    "confidence": "LOW",
+    "justification": "Difficult to classify, \"passive attitude towards my plight\" suggests a duty that is more than transactional/performance-based"
+  },
+  "50": {
+    "narrative_number": 50,
+    "complaint_id": 3276212,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Not a pre-existing relationship between customer and loan servicer"
+  },
+  "51": {
+    "narrative_number": 51,
+    "complaint_id": 5233520,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0.1,
+    "evaluative_score": 0.1,
+    "confidence": "LOW",
+    "justification": "Hard to classify, \"fiduciary\" but not necessarily used in delegative sense, frustration but not clear at what/whom"
+  },
+  "52": {
+    "narrative_number": 52,
+    "complaint_id": 7487805,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Mostly factual and language about \"illegal\" refers to external authority, not trust of any kind"
+  },
+  "53": {
+    "narrative_number": 53,
+    "complaint_id": 7622311,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Factual and no pre-existing relationship"
+  },
+  "54": {
+    "narrative_number": 54,
+    "complaint_id": 9163186,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "MEDIUM",
+    "justification": "Pre-existing relationship but seemingly on evaluative/performance based grounds. Expectations frustrated but no trust language"
+  },
+  "55": {
+    "narrative_number": 55,
+    "complaint_id": 7493712,
+    "classification": "DELEGATIVE",
+    "delegative_score": 0.2,
+    "evaluative_score": 0,
+    "confidence": "LOW",
+    "justification": "Language about being \"pushed around\", suggests a duty that is more than transactional"
+  },
+  "56": {
+    "narrative_number": 56,
+    "complaint_id": 3988326,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "MEDIUM",
+    "justification": "Some transactional relationship language, clearly relied upon the card issuer"
+  },
+  "57": {
+    "narrative_number": 57,
+    "complaint_id": 1781283,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "MEDIUM",
+    "justification": "Almost entirely factual, unclear what the relationship is"
+  },
+  "58": {
+    "narrative_number": 58,
+    "complaint_id": 18961474,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Factual, unclear relationship"
+  },
+  "59": {
+    "narrative_number": 59,
+    "complaint_id": 1413110,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0.1,
+    "evaluative_score": 0.1,
+    "confidence": "LOW",
+    "justification": "Some transactional relationship language, some suggestions of moral betrayal, but little relationship language overall"
+  },
+  "60": {
+    "narrative_number": 60,
+    "complaint_id": 14376219,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "61": {
+    "narrative_number": 61,
+    "complaint_id": 6662616,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No clear institution involved"
+  },
+  "62": {
+    "narrative_number": 62,
+    "complaint_id": 4901463,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No pre-existing relationship"
+  },
+  "63": {
+    "narrative_number": 63,
+    "complaint_id": 15605118,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Boilerplate copied from a bank or credit card issuer"
+  },
+  "64": {
+    "narrative_number": 64,
+    "complaint_id": 10586999,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Some transactional language with expectations not met"
+  },
+  "65": {
+    "narrative_number": 65,
+    "complaint_id": 4575713,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  },
+  "66": {
+    "narrative_number": 66,
+    "complaint_id": 6289994,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "LOW",
+    "justification": "Some frustration at expectations not being met and rude customer service"
+  },
+  "67": {
+    "narrative_number": 67,
+    "complaint_id": 3197294,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "MEDIUM",
+    "justification": "No language of frustration, betrayal, or other reactive attitudes -- whether transactional or delegative."
+  },
+  "68": {
+    "narrative_number": 68,
+    "complaint_id": 5903373,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "MEDIUM",
+    "justification": "Frustration is primarily with CFPB and legal recourse, not much information about the relationship with the financial institution"
+  },
+  "69": {
+    "narrative_number": 69,
+    "complaint_id": 7163084,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.5,
+    "confidence": "MEDIUM",
+    "justification": "Frustration with transactional processes, clearly burned by banks before. Unlikely to extend delegative trust."
+  },
+  "70": {
+    "narrative_number": 70,
+    "complaint_id": 5922211,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "",
+    "justification": "Largely factual, no relationship language"
+  },
+  "71": {
+    "narrative_number": 71,
+    "complaint_id": 3181099,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Some language about frustration with expectations in the relationship not being met"
+  },
+  "72": {
+    "narrative_number": 72,
+    "complaint_id": 8239915,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Minor relationship language that is entirely transactional"
+  },
+  "73": {
+    "narrative_number": 73,
+    "complaint_id": 11673824,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No relationship, general concern with banking"
+  },
+  "74": {
+    "narrative_number": 74,
+    "complaint_id": 15130543,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Barely coherent and no clear relationship language"
+  },
+  "75": {
+    "narrative_number": 75,
+    "complaint_id": 2263674,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Fraud situation"
+  },
+  "76": {
+    "narrative_number": 76,
+    "complaint_id": 11619867,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No relationship language"
+  },
+  "77": {
+    "narrative_number": 77,
+    "complaint_id": 15922607,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Performance expectations not met, no delegative trust language"
+  },
+  "78": {
+    "narrative_number": 78,
+    "complaint_id": 7240922,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Not much to go on, but pre-existing relationship seems to center on performance expectations"
+  },
+  "79": {
+    "narrative_number": 79,
+    "complaint_id": 2266282,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No pre-existing relationship"
+  },
+  "80": {
+    "narrative_number": 80,
+    "complaint_id": 6502919,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  },
+  "81": {
+    "narrative_number": 81,
+    "complaint_id": 7006718,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Problem is largely transactional, but implied duty for Wells Fargo that goes beyond transactional trust"
+  },
+  "82": {
+    "narrative_number": 82,
+    "complaint_id": 2905452,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Political message, no relationship involved"
+  },
+  "83": {
+    "narrative_number": 83,
+    "complaint_id": 3688454,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Purely transactional concerns"
+  },
+  "84": {
+    "narrative_number": 84,
+    "complaint_id": 6761328,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Concerns seem to be transactional, no extension of delegative trust to lender"
+  },
+  "85": {
+    "narrative_number": 85,
+    "complaint_id": 13183598,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Transactional relationship, frustration seems to be with performance and customer service expectations not being met"
+  },
+  "86": {
+    "narrative_number": 86,
+    "complaint_id": 2737980,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.3,
+    "confidence": "MEDIUM",
+    "justification": "Largely transactional concerns but nature of relationship is not 100% clear"
+  },
+  "87": {
+    "narrative_number": 87,
+    "complaint_id": 5069971,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.5,
+    "confidence": "HIGH",
+    "justification": "Frustration at performance expectations not being met despite possibility of \"simple fix\""
+  },
+  "88": {
+    "narrative_number": 88,
+    "complaint_id": 8963412,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.4,
+    "confidence": "MEDIUM",
+    "justification": "Performance and customer service expectations not met"
+  },
+  "89": {
+    "narrative_number": 89,
+    "complaint_id": 1960782,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Political concern from a lender"
+  },
+  "90": {
+    "narrative_number": 90,
+    "complaint_id": 11655604,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  },
+  "91": {
+    "narrative_number": 91,
+    "complaint_id": 9550592,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.2,
+    "confidence": "LOW",
+    "justification": "Seems to be transactional concerns, unclear how much evaluative trust was even extended"
+  },
+  "92": {
+    "narrative_number": 92,
+    "complaint_id": 16720212,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.6,
+    "confidence": "HIGH",
+    "justification": "Significant frustration at performance expectations not being met, especially the reliability of existing credit available (\"I relied on those assurances\")."
+  },
+  "93": {
+    "narrative_number": 93,
+    "complaint_id": 15815903,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Scam concerns"
+  },
+  "94": {
+    "narrative_number": 94,
+    "complaint_id": 16479028,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "95": {
+    "narrative_number": 95,
+    "complaint_id": 1654861,
+    "classification": "EVALUATIVE",
+    "delegative_score": 0,
+    "evaluative_score": 0.5,
+    "confidence": "HIGH",
+    "justification": "Frustration with competence, performance against expectations, etc"
+  },
+  "96": {
+    "narrative_number": 96,
+    "complaint_id": 5745591,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Factual"
+  },
+  "97": {
+    "narrative_number": 97,
+    "complaint_id": 2792843,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No relationship"
+  },
+  "98": {
+    "narrative_number": 98,
+    "complaint_id": 8095587,
+    "classification": "DELEGATIVE",
+    "delegative_score": 0.5,
+    "evaluative_score": 0.2,
+    "confidence": "MEDIUM",
+    "justification": "Largely delegative, moral language, suggesting that customer expected good stewardship of home from his lender"
+  },
+  "99": {
+    "narrative_number": 99,
+    "complaint_id": 2400974,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "No pre-existing relationship, customer dealing with late mother's account"
+  },
+  "100": {
+    "narrative_number": 100,
+    "complaint_id": 7463340,
+    "classification": "UNCLASSIFIABLE",
+    "delegative_score": 0,
+    "evaluative_score": 0,
+    "confidence": "HIGH",
+    "justification": "Identity theft"
+  }
+}
