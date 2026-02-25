@@ -1,16 +1,13 @@
 """
-Stage 2: GPT-4o classification of the 100 hand-validation narratives.
+Stage 2: GPT-4o classification of the full 9,000-narrative dataset.
 
 Uses the SAME classification prompt as the Claude Sonnet classifier
 (from cfpb_stage2_prompt_revised_20260222.md) but routed through
-OpenAI's GPT-4o API, for inter-rater reliability comparison:
-  - Human (Chris hand-coding)
-  - Claude Sonnet (cfpb_handcode_100_key.csv)
-  - GPT-4o (this script's output)
+OpenAI's GPT-4o API, for inter-rater reliability comparison.
 
 Requires: OPENAI_API_KEY environment variable.
-Input:  output/cfpb_handcode_100_blind.csv (100 narratives)
-Output: output/cfpb_handcode_100_gpt4o.csv (GPT-4o classifications)
+Input:  data/classification_sample_9000.csv (9,000 narratives)
+Output: output/cfpb_gpt4o_classified_9000.csv (GPT-4o classifications)
 """
 
 import pandas as pd
@@ -21,12 +18,13 @@ import time
 import asyncio
 import traceback
 
-INPUT_PATH = "/workspaces/HumanxAI-2026/output/cfpb_handcode_100_blind.csv"
-OUTPUT_PATH = "/workspaces/HumanxAI-2026/output/cfpb_handcode_100_gpt4o.csv"
-FAILED_LOG = "/workspaces/HumanxAI-2026/output/cfpb_gpt4o_failures.log"
+INPUT_PATH = "/workspaces/HumanxAI-2026/data/classification_sample_9000.csv"
+OUTPUT_PATH = "/workspaces/HumanxAI-2026/output/cfpb_gpt4o_classified_9000.csv"
+CHECKPOINT_PATH = "/workspaces/HumanxAI-2026/output/cfpb_gpt4o_classified_9000_checkpoint.csv"
+FAILED_LOG = "/workspaces/HumanxAI-2026/output/cfpb_gpt4o_9000_failures.log"
 
 MODEL = "gpt-4o"
-MAX_CONCURRENT = 10
+MAX_CONCURRENT = 5
 TEMPERATURE = 0.0
 MAX_TOKENS = 300
 
@@ -137,6 +135,36 @@ async def classify_one(client, narrative_text, semaphore, max_retries=5):
     return {'error': 'max retries exceeded', 'raw_response': ''}
 
 
+BATCH_SIZE = 100  # process and checkpoint in batches of 100
+
+
+def build_row(row, result):
+    """Build an output row from input row + classification result."""
+    if result and 'error' not in result:
+        return {
+            'complaint_id': row['complaint_id'],
+            'product_group': row['product_group'],
+            'classification': result['classification'],
+            'confidence': result['confidence'],
+            'delegative_score': result['delegative_score'],
+            'evaluative_score': result['evaluative_score'],
+            'primary_evidence': result['primary_evidence'],
+            'secondary_signals': result['secondary_signals'],
+        }, None
+    else:
+        error_info = result if result else {'error': 'unknown', 'raw_response': ''}
+        return {
+            'complaint_id': row['complaint_id'],
+            'product_group': row['product_group'],
+            'classification': 'PARSE_ERROR',
+            'confidence': None,
+            'delegative_score': None,
+            'evaluative_score': None,
+            'primary_evidence': error_info.get('raw_response', ''),
+            'secondary_signals': error_info.get('error', ''),
+        }, {'complaint_id': row['complaint_id'], 'error': error_info.get('error', 'unknown')}
+
+
 async def main():
     api_key = os.environ.get('OPENAI_API_KEY')
     if not api_key:
@@ -154,63 +182,70 @@ async def main():
     client = AsyncOpenAI(api_key=api_key)
     semaphore = asyncio.Semaphore(MAX_CONCURRENT)
 
-    # Load the 100 blind narratives
-    print("Loading 100 blind narratives...")
-    df = pd.read_csv(INPUT_PATH, dtype={'complaint_id': 'int64'})
+    # Load the 9,000 narratives
+    print("Loading 9,000-narrative dataset...")
+    df = pd.read_csv(INPUT_PATH, dtype={'complaint_id': 'int64'}, parse_dates=['date'])
     print(f"Loaded {len(df)} narratives")
 
-    # Classify all 100
-    print(f"\nClassifying with {MODEL} (temperature={TEMPERATURE})...")
-    print(f"Concurrency: {MAX_CONCURRENT}")
-    start_time = time.time()
-
-    tasks = []
-    for _, row in df.iterrows():
-        narrative = str(row['narrative_text'])
-        task = classify_one(client, narrative, semaphore)
-        tasks.append(task)
-
-    raw_results = await asyncio.gather(*tasks)
-
-    # Process results
+    # Check for checkpoint — resume if it exists
+    done_ids = set()
     results = []
-    failed = []
-    for i, (_, row) in enumerate(df.iterrows()):
-        result = raw_results[i]
-        if result and 'error' not in result:
-            results.append({
-                'narrative_number': row['narrative_number'],
-                'complaint_id': row['complaint_id'],
-                'product_type': row['product_type'],
-                'classification': result['classification'],
-                'confidence': result['confidence'],
-                'delegative_score': result['delegative_score'],
-                'evaluative_score': result['evaluative_score'],
-                'primary_evidence': result['primary_evidence'],
-                'secondary_signals': result['secondary_signals'],
-            })
-        else:
-            error_info = result if result else {'error': 'unknown', 'raw_response': ''}
-            failed.append({
-                'narrative_number': row['narrative_number'],
-                'complaint_id': row['complaint_id'],
-                'error': error_info.get('error', 'unknown'),
-            })
-            results.append({
-                'narrative_number': row['narrative_number'],
-                'complaint_id': row['complaint_id'],
-                'product_type': row['product_type'],
-                'classification': 'PARSE_ERROR',
-                'confidence': None,
-                'delegative_score': None,
-                'evaluative_score': None,
-                'primary_evidence': error_info.get('raw_response', ''),
-                'secondary_signals': error_info.get('error', ''),
-            })
+    if os.path.exists(CHECKPOINT_PATH):
+        checkpoint_df = pd.read_csv(CHECKPOINT_PATH, dtype={'complaint_id': 'int64'})
+        done_ids = set(checkpoint_df['complaint_id'].tolist())
+        results = checkpoint_df.to_dict('records')
+        print(f"Resuming from checkpoint: {len(done_ids)} already classified")
 
-    # Save
+    remaining = df[~df['complaint_id'].isin(done_ids)].reset_index(drop=True)
+    total = len(df)
+    already_done = len(done_ids)
+    print(f"Remaining to classify: {len(remaining)}")
+
+    print(f"\nClassifying with {MODEL} (temperature={TEMPERATURE})...")
+    print(f"Concurrency: {MAX_CONCURRENT}, batch size: {BATCH_SIZE}")
+    start_time = time.time()
+    failed = []
+
+    # Process in batches of BATCH_SIZE, checkpoint after each batch
+    for batch_start in range(0, len(remaining), BATCH_SIZE):
+        batch_end = min(batch_start + BATCH_SIZE, len(remaining))
+        batch_df = remaining.iloc[batch_start:batch_end]
+
+        # Fire off batch concurrently
+        tasks = []
+        for _, row in batch_df.iterrows():
+            narrative = str(row['narrative_text'])
+            tasks.append(classify_one(client, narrative, semaphore))
+        batch_results = await asyncio.gather(*tasks)
+
+        # Process batch results
+        for i, (_, row) in enumerate(batch_df.iterrows()):
+            out_row, fail = build_row(row, batch_results[i])
+            results.append(out_row)
+            if fail:
+                failed.append(fail)
+
+        # Save checkpoint
+        checkpoint_df = pd.DataFrame(results)
+        checkpoint_df.to_csv(CHECKPOINT_PATH, index=False)
+
+        # Progress
+        done_now = already_done + batch_end
+        elapsed = time.time() - start_time
+        classified_this_run = batch_end
+        rate = classified_this_run / elapsed if elapsed > 0 else 0
+        remaining_count = total - done_now
+        eta = remaining_count / rate if rate > 0 else 0
+        print(f"  [{done_now}/{total}] {elapsed:.0f}s elapsed, "
+              f"{rate:.1f}/s, ~{eta:.0f}s remaining — checkpoint saved")
+
+    # Final output
     results_df = pd.DataFrame(results)
     results_df.to_csv(OUTPUT_PATH, index=False)
+
+    # Clean up checkpoint
+    if os.path.exists(CHECKPOINT_PATH):
+        os.remove(CHECKPOINT_PATH)
 
     elapsed = time.time() - start_time
     print(f"\n{'=' * 70}")
