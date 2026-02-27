@@ -1,0 +1,7 @@
+Stage,N_Remaining,N_Excluded,Reason
+Qualtrics total,471,0,Raw export
+After removing previews,468,3,Status = Survey Preview
+After removing pilots,451,17,Qualtrics EndDate < earliest Prolific completion (2026-02-25 18:47:55.843000+00:00)
+After timestamp matching,446,5,Unmatched Qualtrics rows (RETURNED/TIMED-OUT participants)
+After speed exclusion,357,89,Pre-registered: Duration < 120 seconds
+After dual-check exclusion,354,3,Pre-registered: failed BOTH attention (D6) and comprehension (C2)
