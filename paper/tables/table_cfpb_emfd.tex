@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{eMFD correlations with trust scores: dual-model comparison (Spearman $\rho$)}
+\label{tab:cfpb_emfd}
+\begin{tabular}{lcccc}
+\toprule
+ & \multicolumn{2}{c}{Delegative score} & \multicolumn{2}{c}{Evaluative score} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+Foundation & Sonnet & GPT-4o & Sonnet & GPT-4o \\
+\midrule
+Care      & .099*** & .129*** & $-.112$*** & $-.120$*** \\
+Fairness  & .069*** & .106*** & $-.086$*** & $-.103$*** \\
+Loyalty   & .118*** & .158*** & $-.108$*** & $-.128$*** \\
+Authority & .035**  & .074*** & $-.062$*** & $-.078$*** \\
+Sanctity  & .108*** & .155*** & $-.119$*** & $-.139$*** \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\footnotesize
+\textit{Note.} $N = 8{,}943$. Moral foundation scores derived from the extended Moral Foundations Dictionary (eMFD). Delegative and evaluative scores are continuous (0--1) as assigned by each model. \\
+* $p < .05$, ** $p < .01$, *** $p < .001$.
+\end{flushleft}
+\end{table}
