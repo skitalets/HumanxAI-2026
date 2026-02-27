@@ -1,0 +1,135 @@
+\documentclass[12pt, letterpaper]{article}
+
+% --- Geometry & Layout ---
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% --- Fonts & Encoding ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{mathpazo}           % Palatino — readable, professional
+
+% --- Math & Symbols ---
+\usepackage{amsmath, amssymb}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{threeparttable}     % Table notes
+
+% --- Figures ---
+\usepackage{graphicx}
+\usepackage{float}
+\graphicspath{{figures/}{../figures/}{../data/}}
+
+% --- Citations ---
+\usepackage[authoryear, round, sort&compress]{natbib}
+\bibliographystyle{apalike}
+
+% --- Cross-referencing & Links ---
+\usepackage[colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black]{hyperref}
+\usepackage{cleveref}
+
+% --- Misc ---
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% --- Draft utilities (remove for submission) ---
+\newcommand{\TODO}[1]{\textcolor{red}{\textbf{[TODO: #1]}}}
+\newcommand{\VERIFYSAGE}[1]{\textcolor{orange}{\textbf{[VERIFY: #1]}}}
+\newcommand{\DRAFTNOTE}[1]{\textcolor{blue}{\textbf{[NOTE: #1]}}}
+
+% ===================================================================
+% METADATA
+% ===================================================================
+
+\title{Two Dimensions of Financial Trust: \\
+       How Evaluative and Delegative Trust Shape \\
+       Algorithm Aversion in Robo-Advisory}
+
+\author{Chris [Last Name]\thanks{Corresponding author. [Affiliation]. Email: [email]. 
+This paper was prepared for the UCLA Anderson Human $\times$ AI Finance Competition 
+(Fink Center Conference on Financial Markets, April 2026). 
+The author acknowledges extensive use of AI tools in research and writing; 
+a detailed AI workflow description accompanies this submission.}}
+
+\date{\today \\ \small \textit{Working Paper --- Do Not Circulate}}
+
+% ===================================================================
+% DOCUMENT
+% ===================================================================
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\noindent\textbf{Keywords:} trust, algorithm aversion, robo-advisors, delegative trust, 
+evaluative trust, financial advice, behavioral finance, NLP, survey experiment
+
+\noindent\textbf{JEL Codes:} G11, G41, G50, D83, D91
+
+\clearpage
+\tableofcontents
+\clearpage
+
+% --- Main Sections ---
+
+\section{Introduction}
+\label{sec:introduction}
+\input{sections/introduction}
+
+\section{Theoretical Framework: Evaluative and Delegative Trust}
+\label{sec:theory}
+\input{sections/theory}
+
+\section{Data and Methods}
+\label{sec:data_methods}
+\input{sections/data_methods}
+
+\section{CFPB Complaint Analysis: Results}
+\label{sec:results_cfpb}
+\input{sections/results_cfpb}
+
+\section{Prolific Experiment: Results}
+\label{sec:results_prolific}
+\input{sections/results_prolific}
+
+\section{Discussion}
+\label{sec:discussion}
+\input{sections/discussion}
+
+\section{Conclusion}
+\label{sec:conclusion}
+\input{sections/conclusion}
+
+% --- Bibliography ---
+\clearpage
+\bibliography{references}
+
+% --- Appendices ---
+\clearpage
+\appendix
+
+\section{CFPB Classification Prompt}
+\label{app:cfpb_prompt}
+\input{sections/appendix_cfpb_prompt}
+
+\section{Prolific Survey Instrument}
+\label{app:prolific_instrument}
+\input{sections/appendix_prolific}
+
+\section{Inter-Rater Reliability Details}
+\label{app:interrater}
+\input{sections/appendix_interrater}
+
+\section{Supplementary Tables}
+\label{app:supplementary}
+\input{sections/appendix_supplementary}
+
+\end{document}
