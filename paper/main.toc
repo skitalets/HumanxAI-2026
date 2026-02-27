@@ -1,43 +1,67 @@
 \contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
-\contentsline {section}{\numberline {2}Theoretical Framework: Evaluative and Delegative Trust}{4}{section.2}%
-\contentsline {subsection}{\numberline {2.1}The Distinction}{6}{subsection.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.1}Evaluative Trust}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Delegative Trust}{7}{subsubsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.3}Formal Characterization}{9}{subsubsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.4}The Relationship Between the Two Modes}{11}{subsubsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.2}The Agency Theory Bridge}{12}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}The ``Peace of Mind'' Reinterpretation}{13}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Reconciling Algorithm Appreciation and Aversion}{14}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}The Transparency Paradox and Hypotheses}{16}{subsection.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.1}Hypotheses}{17}{subsubsection.2.5.1}%
-\contentsline {section}{\numberline {3}Data and Methods}{18}{section.3}%
-\contentsline {section}{\numberline {4}CFPB Complaint Analysis: Results}{18}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Sample and Classification Procedure}{19}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Cross-Product Delegative Gradient}{19}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Dual-Model Concordance}{21}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Moral Foundations Validation}{22}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Human Validation}{22}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Dimensional Relationship}{23}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Robustness: Narrative Length}{26}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Exploratory: Company-Level Variation}{26}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Summary}{26}{subsection.4.9}%
-\contentsline {section}{\numberline {5}Prolific Experiment: Results}{27}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Sample and Exclusions}{27}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Descriptive Statistics}{28}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Experimental Manipulation}{29}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Delegative Trust and Post-Shock Resilience}{30}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Delegative Trust and Algorithm Aversion}{31}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Financial Literacy Interaction}{33}{subsection.5.6}%
-\contentsline {subsection}{\numberline {5.7}Exploratory Analyses}{33}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Summary}{34}{subsection.5.8}%
-\contentsline {section}{\numberline {6}Discussion}{35}{section.6}%
-\contentsline {subsection}{\numberline {6.1}What the Manipulation Failure Teaches}{35}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Dimensional Separability Across Methods}{36}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Reconciling Algorithm Aversion and Appreciation}{37}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Delegative Foreclosure and Design Implications}{38}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Limitations}{39}{subsection.6.5}%
-\contentsline {section}{\numberline {7}Conclusion}{41}{section.7}%
-\contentsline {section}{\numberline {A}CFPB Classification Prompt}{45}{appendix.A}%
-\contentsline {section}{\numberline {B}Prolific Survey Instrument}{45}{appendix.B}%
-\contentsline {section}{\numberline {C}Inter-Rater Reliability Details}{45}{appendix.C}%
-\contentsline {section}{\numberline {D}Supplementary Tables}{45}{appendix.D}%
+\contentsline {section}{\numberline {2}Theoretical Framework: Evaluative and Delegative Trust}{6}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Distinction}{8}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Evaluative Trust}{8}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Delegative Trust}{9}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Formal Characterization}{11}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}The Relationship Between the Two Modes}{13}{subsubsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.2}The Agency Theory Bridge}{14}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The ``Peace of Mind'' Reinterpretation}{15}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Reconciling Algorithm Appreciation and Aversion}{16}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}The Transparency Paradox and Hypotheses}{18}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Hypotheses}{19}{subsubsection.2.5.1}%
+\contentsline {section}{\numberline {3}Data and Methods}{20}{section.3}%
+\contentsline {subsection}{\numberline {3.1}CFPB Complaint Database Analysis}{20}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Sample}{20}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Classification Procedure}{21}{subsubsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.3}Moral Foundations Validation}{21}{subsubsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.4}Human Validation}{21}{subsubsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.2}Prolific Experiment}{22}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Design}{22}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Participants}{22}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.3}Materials}{22}{subsubsection.3.2.3}%
+\contentsline {paragraph}{Condition vignettes.}{22}{section*.2}%
+\contentsline {paragraph}{Adverse event.}{23}{section*.3}%
+\contentsline {subsubsection}{\numberline {3.2.4}Measures}{23}{subsubsection.3.2.4}%
+\contentsline {paragraph}{Evaluative trust}{23}{section*.4}%
+\contentsline {paragraph}{Delegative trust}{23}{section*.5}%
+\contentsline {paragraph}{Betrayal}{23}{section*.6}%
+\contentsline {paragraph}{Disappointment}{23}{section*.7}%
+\contentsline {paragraph}{Betrayal premium.}{23}{section*.8}%
+\contentsline {paragraph}{Exit intent}{23}{section*.9}%
+\contentsline {paragraph}{Algorithm aversion}{24}{section*.10}%
+\contentsline {paragraph}{Comprehension check}{24}{section*.11}%
+\contentsline {paragraph}{Financial literacy}{24}{section*.12}%
+\contentsline {paragraph}{Attention check}{24}{section*.13}%
+\contentsline {paragraph}{Demographics.}{24}{section*.14}%
+\contentsline {subsubsection}{\numberline {3.2.5}Analytic Strategy}{24}{subsubsection.3.2.5}%
+\contentsline {section}{\numberline {4}CFPB Complaint Analysis: Results}{25}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Sample and Classification Procedure}{25}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Cross-Product Delegative Gradient}{26}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Dual-Model Concordance}{27}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Moral Foundations Validation}{28}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Human Validation}{29}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Dimensional Relationship}{30}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Robustness: Narrative Length}{32}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Exploratory: Company-Level Variation}{32}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Summary}{32}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Prolific Experiment: Results}{33}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Sample and Exclusions}{33}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Descriptive Statistics}{34}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Experimental Manipulation}{35}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Delegative Trust and Post-Shock Resilience}{36}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Delegative Trust and Algorithm Aversion}{37}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Financial Literacy Interaction}{39}{subsection.5.6}%
+\contentsline {subsection}{\numberline {5.7}Exploratory Analyses}{39}{subsection.5.7}%
+\contentsline {subsection}{\numberline {5.8}Summary}{40}{subsection.5.8}%
+\contentsline {section}{\numberline {6}Discussion}{41}{section.6}%
+\contentsline {subsection}{\numberline {6.1}What the Manipulation Failure Teaches}{41}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Dimensional Separability Across Methods}{42}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Reconciling Algorithm Aversion and Appreciation}{43}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Delegative Foreclosure and Design Implications}{44}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Limitations}{45}{subsection.6.5}%
+\contentsline {section}{\numberline {7}Conclusion}{47}{section.7}%
+\contentsline {section}{\numberline {A}CFPB Classification Prompt}{52}{appendix.A}%
+\contentsline {section}{\numberline {B}Prolific Survey Instrument}{52}{appendix.B}%
+\contentsline {section}{\numberline {C}Inter-Rater Reliability Details}{52}{appendix.C}%
+\contentsline {section}{\numberline {D}Supplementary Tables}{52}{appendix.D}%
