@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{OLS regression predicting general exit intent (H4)}
+\label{tab:reg_h4}
+\begin{tabular}{lcccccc}
+\toprule
+Predictor & $B$ & SE & $\beta$ & $t$ & $p$ & 95\% CI \\
+\midrule
+\textbf{Delegative trust}    & \textbf{$-0.206$**} & \textbf{0.064} & \textbf{$-0.179$} & \textbf{$-3.23$} & \textbf{.001} & \textbf{[$-0.33$, $-0.08$]} \\
+Evaluative trust              & 0.037                & 0.087          & 0.024              & 0.43              & .667 & [$-0.13$, $0.21$] \\
+Condition A (Fiduciary)       & $-0.056$             & 0.218          & $-0.016$           & $-0.26$           & .797 & [$-0.48$, $0.37$] \\
+Condition B (Performance)     & $-0.132$             & 0.211          & $-0.039$           & $-0.62$           & .532 & [$-0.55$, $0.28$] \\
+Age                           & 0.005                & 0.007          & 0.040              & 0.74              & .460 & [$-0.01$, $0.02$] \\
+Financial literacy            & $-0.251$             & 0.134          & $-0.106$           & $-1.87$           & .062 & [$-0.51$, $0.01$] \\
+Robo-advisor experience       & 0.242                & 0.266          & 0.049              & 0.91              & .365 & [$-0.28$, $0.76$] \\
+Comprehension pass            & 0.616**              & 0.232          & 0.146              & 2.65              & .008 & [$0.16$, $1.07$] \\
+Attention pass                & 0.577                & 0.478          & 0.064              & 1.21              & .228 & [$-0.36$, $1.52$] \\
+\midrule
+\multicolumn{7}{l}{$R^2 = .054$, Adjusted $R^2 = .029$, $F(9, 344) = 2.18$, $p = .023$} \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\footnotesize
+\textit{Note.} Reference category for condition is C (Neutral control). Robo-advisor experience coded as 1 = has used a robo-advisor. Comprehension pass = correctly identified WealthPath underperformance. Attention pass = selected instructed response. $N = 354$. \\
+* $p < .05$, ** $p < .01$, *** $p < .001$.
+\end{flushleft}
+\end{table}

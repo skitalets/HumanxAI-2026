@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{OLS regression predicting algorithm aversion (H3)}
+\label{tab:reg_h3}
+\begin{tabular}{lcccccc}
+\toprule
+Predictor & $B$ & SE & $\beta$ & $t$ & $p$ & 95\% CI \\
+\midrule
+\textbf{Delegative trust}    & \textbf{$-0.326$***} & \textbf{0.056} & \textbf{$-0.304$} & \textbf{$-5.79$} & \textbf{$< .001$} & \textbf{[$-0.44$, $-0.22$]} \\
+Evaluative trust              & $-0.039$             & 0.077          & $-0.027$           & $-0.50$           & .614 & [$-0.19$, $0.11$] \\
+Condition A (Fiduciary)       & 0.073                & 0.192          & 0.023              & 0.38              & .703 & [$-0.30$, $0.45$] \\
+Condition B (Performance)     & $-0.250$             & 0.186          & $-0.079$           & $-1.35$           & .179 & [$-0.62$, $0.12$] \\
+Age                           & $-0.006$             & 0.006          & $-0.051$           & $-1.01$           & .315 & [$-0.02$, $0.01$] \\
+Financial literacy            & $-0.191$             & 0.118          & $-0.086$           & $-1.62$           & .107 & [$-0.42$, $0.04$] \\
+Robo-advisor experience       & $-0.215$             & 0.234          & $-0.047$           & $-0.92$           & .358 & [$-0.68$, $0.25$] \\
+Comprehension pass            & 0.584**              & 0.204          & 0.149              & 2.86              & .004 & [$0.18$, $0.99$] \\
+Attention pass                & 1.179**              & 0.421          & 0.141              & 2.80              & .005 & [$0.35$, $2.01$] \\
+\midrule
+\multicolumn{7}{l}{$R^2 = .151$, Adjusted $R^2 = .129$, $F(9, 344) = 6.82$, $p < .001$} \\
+\bottomrule
+\end{tabular}
+\begin{flushleft}
+\footnotesize
+\textit{Note.} Reference category for condition is C (Neutral control). Robo-advisor experience coded as 1 = has used a robo-advisor. Comprehension pass = correctly identified WealthPath underperformance. Attention pass = selected instructed response. $N = 354$. \\
+* $p < .05$, ** $p < .01$, *** $p < .001$.
+\end{flushleft}
+\end{table}

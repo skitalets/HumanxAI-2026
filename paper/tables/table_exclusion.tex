@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\small
+\caption{Sample exclusion pipeline}
+\label{tab:exclusion}
+\begin{tabular}{llrl}
+\toprule
+Stage & $N$ Remaining & $N$ Excluded & Reason \\
+\midrule
+Qualtrics total        & 471 & ---  & Raw export \\
+Remove previews        & 468 & 3   & Survey preview responses \\
+Remove pilots          & 451 & 17  & Pre-registered pilot exclusion \\
+Prolific matching      & 446 & 5   & Unmatched to Prolific approved submissions \\
+Speed exclusion        & 357 & 89  & Completion time $<$ 120 seconds \\
+Dual-check exclusion   & 354 & 3   & Failed both attention and comprehension checks \\
+\bottomrule
+\end{tabular}
+\end{table}
