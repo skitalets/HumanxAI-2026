@@ -1,1 +1,365 @@
-\TODO{Include supplementary tables: full product-level breakdowns, robustness checks, alternative specifications, and additional statistical tests.}
+\noindent Tables D.1--D.5 supplement the CFPB complaint analysis (\Cref{sec:results_cfpb}). Tables D.6--D.10 supplement the Prolific experiment (\Cref{sec:results_prolific}). Significance levels: {*}\,$p < .05$, {**}\,$p < .01$, {***}\,$p < .001$.
+
+\subsection{CFPB Supplementary Tables}
+
+% ── D.1: eMFD by Classification ──────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\caption{Extended Moral Foundations Dictionary (eMFD) scores by trust classification category ($N = 8{,}991$). Values are mean probability scores with standard deviations in parentheses.}
+\label{tab:supp_emfd_class}
+\begin{tabular}{lccc}
+\toprule
+Foundation & Evaluative & Delegative & Unclassifiable \\
+\midrule
+Care      & 0.02673 (0.00598) & 0.02806 (0.00537) & 0.02852 (0.00824) \\
+Fairness  & 0.03052 (0.00696) & 0.03156 (0.00607) & 0.03244 (0.00923) \\
+Loyalty   & 0.02311 (0.00489) & 0.02434 (0.00434) & 0.02420 (0.00695) \\
+Authority & 0.02428 (0.00548) & 0.02478 (0.00463) & 0.02603 (0.00732) \\
+Sanctity  & 0.01999 (0.00461) & 0.02115 (0.00423) & 0.02185 (0.00716) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ── D.2: eMFD by Product ─────────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\caption{eMFD scores by product type ($N = 8{,}991$). Values are mean probability scores with standard deviations in parentheses.}
+\label{tab:supp_emfd_product}
+\begin{tabular}{lccc}
+\toprule
+Foundation & Mortgage & Checking/Savings & Credit Card \\
+\midrule
+Care      & 0.02653 (0.00597) & 0.02720 (0.00618) & 0.02742 (0.00601) \\
+Fairness  & 0.03098 (0.00692) & 0.03088 (0.00716) & 0.03055 (0.00688) \\
+Loyalty   & 0.02320 (0.00469) & 0.02396 (0.00521) & 0.02296 (0.00493) \\
+Authority & 0.02364 (0.00496) & 0.02463 (0.00578) & 0.02512 (0.00559) \\
+Sanctity  & 0.01995 (0.00449) & 0.02046 (0.00495) & 0.02044 (0.00481) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ── D.3: Narrative Length ─────────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\caption{Narrative length (characters) by trust classification and product type.}
+\label{tab:supp_length}
+\begin{small}
+\textit{Panel A: Sonnet classifications}
+
+\medskip
+\begin{tabular}{llrrrr}
+\toprule
+Product & Classification & $N$ & Mean & Median & SD \\
+\midrule
+Mortgage          & Evaluative      & 2,274 & 1,590 & 1,122 & 1,751 \\
+                  & Delegative      &   625 & 2,144 & 1,589 & 2,161 \\
+                  & Unclassifiable  &    75 & 1,637 &   715 & 2,821 \\
+Checking/Savings  & Evaluative      & 2,328 & 1,230 &   905 & 1,089 \\
+                  & Delegative      &   485 & 1,889 & 1,419 & 1,905 \\
+                  & Unclassifiable  &   172 &   664 &   456 &   604 \\
+Credit Card       & Evaluative      & 2,361 & 1,305 &   963 & 1,210 \\
+                  & Delegative      &   367 & 1,798 & 1,509 & 1,129 \\
+                  & Unclassifiable  &   256 &   867 &   470 & 1,103 \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textit{Panel B: GPT-4o classifications}
+
+\medskip
+\begin{tabular}{llrrrr}
+\toprule
+Product & Classification & $N$ & Mean & Median & SD \\
+\midrule
+Mortgage          & Evaluative      & 2,191 & 1,539 & 1,129 & 1,435 \\
+                  & Delegative      &   589 & 2,562 & 1,855 & 3,007 \\
+                  & Unclassifiable  &   194 & 1,022 &   692 & 1,050 \\
+Checking/Savings  & Evaluative      & 2,127 & 1,264 &   955 & 1,112 \\
+                  & Delegative      &   395 & 2,047 & 1,459 & 2,034 \\
+                  & Unclassifiable  &   463 &   857 &   620 &   745 \\
+Credit Card       & Evaluative      & 2,268 & 1,305 & 1,002 & 1,124 \\
+                  & Delegative      &   262 & 2,236 & 1,787 & 1,745 \\
+                  & Unclassifiable  &   454 &   924 &   612 &   960 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\end{table}
+
+% ── D.4: Length Regression ────────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{OLS regression: narrative length as predictor of Sonnet delegative score ($N = 8{,}943$).}
+\label{tab:supp_length_reg}
+\begin{small}
+\textit{Panel A: Regression coefficients}
+
+\medskip
+\begin{tabular}{lrrrrrr}
+\toprule
+Predictor & $B$ & SE & $t$ & $p$ & \multicolumn{2}{c}{95\% CI} \\
+\midrule
+Intercept                             & $-0.243$ & 0.021 & $-11.40$ & $< .001$\rlap{***} & $-0.285$ & $-0.201$ \\
+log(Character count)                  &    0.079 & 0.003 &   25.90  & $< .001$\rlap{***} &    0.073 &    0.085 \\
+Credit card (vs.\ Checking/Savings)   & $-0.038$ & 0.006 & $-6.65$  & $< .001$\rlap{***} & $-0.049$ & $-0.027$ \\
+Mortgage (vs.\ Checking/Savings)      &    0.016 & 0.006 &    2.71  &    .007\rlap{**}    &    0.004 &    0.027 \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textit{Panel B: Cross-product delegative gradient, raw vs.\ length-controlled}
+
+\medskip
+\begin{tabular}{lrr}
+\toprule
+Product & Raw Mean Deleg.\ Score & Residualized Mean \\
+\midrule
+Mortgage         & 0.334 & $+0.023$ \\
+Checking/Savings & 0.299 & $+0.008$ \\
+Credit Card      & 0.263 & $-0.030$ \\
+\midrule
+Gradient (max $-$ min) & 0.071 & 0.053 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Gradient retained after length control: 74.3\%. The cross-product delegative gradient survives length control; narrative length does not explain away the between-product differences in delegative trust.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ── D.5: Company Concentration ────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Company-level delegative proportion for mortgage complaints (companies with $\geq 50$ narratives, $N = 15$).}
+\label{tab:supp_company}
+\begin{small}
+\begin{tabular}{lrrrrr}
+\toprule
+Company & Total & Eval.\ & Deleg.\ & Unclass.\ & Deleg.\ \% \\
+\midrule
+Wells Fargo \& Co.          & 241 & 136 & 91 & 14 & 37.8 \\
+Bank of America             & 116 &  72 & 39 &  5 & 33.6 \\
+JPMorgan Chase \& Co.       &  95 &  66 & 27 &  2 & 28.4 \\
+Ocwen Financial             & 173 & 124 & 44 &  5 & 25.4 \\
+Nationstar Mortgage         &  81 &  60 & 20 &  1 & 24.7 \\
+U.S.\ Bancorp               &  56 &  40 & 13 &  3 & 23.2 \\
+Select Portfolio Servicing  & 107 &  81 & 23 &  3 & 21.5 \\
+Ditech Financial            &  71 &  56 & 15 &  0 & 21.1 \\
+Rocket Mortgage             &  63 &  49 & 12 &  2 & 19.0 \\
+Mr.\ Cooper Group           & 152 & 121 & 26 &  5 & 17.1 \\
+Specialized Loan Servicing  &  72 &  59 & 12 &  1 & 16.7 \\
+Freedom Mortgage            &  99 &  81 & 16 &  2 & 16.2 \\
+Shellpoint Partners         & 185 & 154 & 29 &  2 & 15.7 \\
+PennyMac Loan Services      &  52 &  44 &  7 &  1 & 13.5 \\
+LoanCare                    &  83 &  80 &  3 &  0 &  3.6 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Sorted by delegative proportion (descending). Delegative proportion ranges from 3.6\% (LoanCare) to 37.8\% (Wells Fargo), a spread of 34.2 percentage points. Classifications based on Sonnet model; concordant-only analysis yields similar ordering.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ==================================================================
+\subsection{Prolific Supplementary Tables}
+% ==================================================================
+
+% ── D.6: Robustness — Strict Attention ────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Robustness check: hypothesis tests under strict attention exclusion ($N = 342$).}
+\label{tab:supp_robust_attn}
+\begin{small}
+\begin{tabular}{llrcl}
+\toprule
+Hypothesis & Prediction & Key Statistic & $p$ & Supported \\
+\midrule
+H1a (Eval: B $\geq$ A) & Higher evaluative in B & B $\geq$ A & .434 & No \\
+H1b (Deleg: A $\geq$ B) & Higher delegative in A & A $\geq$ B & .147 & No \\
+H2 (Betrayal premium) & Higher in A than B & A $>$ B & .483 & No \\
+H3 (Algorithm aversion) & Eval predicts, Deleg does not & $\beta_\text{eval} = -.058$ & .462 & No \\
+                         &                               & $\beta_\text{deleg} = -.322$ & & \\
+H4 (Deleg.\ resilience) & Deleg predicts lower exit & $\beta_\text{deleg} = -.207$ & .001** & Yes \\
+H5 (Literacy $\times$ Cond.) & Interaction on delegative & $\beta_\text{int} = .082$ & .854 & No \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Excludes participants who failed the attention check (D6). All results match the direction and significance pattern of the primary analysis ($N = 354$).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ── D.7: Robustness — Strict Comprehension ────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Robustness check: hypothesis tests under strict comprehension exclusion ($N = 289$).}
+\label{tab:supp_robust_comp}
+\begin{small}
+\begin{tabular}{llrcl}
+\toprule
+Hypothesis & Prediction & Key Statistic & $p$ & Supported \\
+\midrule
+H1a (Eval: B $\geq$ A) & Higher evaluative in B & B $\geq$ A & .389 & No \\
+H1b (Deleg: A $\geq$ B) & Higher delegative in A & A $\geq$ B & .157 & No \\
+H2 (Betrayal premium) & Higher in A than B & A $>$ B & .511 & No \\
+H3 (Algorithm aversion) & Eval predicts, Deleg does not & $\beta_\text{eval} = -.047$ & .574 & No \\
+                         &                               & $\beta_\text{deleg} = -.316$ & & \\
+H4 (Deleg.\ resilience) & Deleg predicts lower exit & $\beta_\text{deleg} = -.161$ & .021* & Yes \\
+H5 (Literacy $\times$ Cond.) & Interaction on delegative & $\beta_\text{int} = -.269$ & .606 & No \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Excludes participants who failed the comprehension check. All results match the direction and significance pattern of the primary analysis ($N = 354$).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ── D.8: Full Regression H3 + H4 ─────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Full OLS regression output for H3 (algorithm aversion) and H4 (general exit intent).}
+\label{tab:supp_reg_h3h4}
+\begin{small}
+\begin{tabular}{lcc}
+\toprule
+ & Algorithm Aversion (H3) & General Exit (H4) \\
+Predictor & $B$ (SE) & $B$ (SE) \\
+\midrule
+Intercept              & 5.573*** (0.671)  & 4.709*** (0.762) \\
+Evaluative trust       & $-0.039$ (0.077)  & 0.037 (0.087) \\
+Delegative trust       & $-0.326$*** (0.056)  & $-0.206$** (0.064) \\
+Condition A            & 0.073 (0.192)     & $-0.056$ (0.218) \\
+Condition B            & $-0.250$ (0.186)  & $-0.132$ (0.211) \\
+Age                    & $-0.006$ (0.006)  & 0.005 (0.007) \\
+Financial literacy     & $-0.191$ (0.118)  & $-0.251$ (0.134) \\
+Robo-advisor exp.      & $-0.215$ (0.234)  & 0.242 (0.266) \\
+Comprehension (pass)   & 0.584** (0.204)   & 0.616** (0.232) \\
+Attention check (pass) & 1.179** (0.421)   & 0.577 (0.478) \\
+\midrule
+$R^2$                  & 0.151             & 0.054 \\
+Adj.\ $R^2$           & 0.129             & 0.029 \\
+$N$                    & 354               & 354 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Reference category for condition dummies: Condition C (neutral control). Standardized $\beta$ for delegative trust: $-0.304$ (H3), $-0.179$ (H4). Standardized $\beta$ for comprehension check: 0.149 (H3), 0.146 (H4).
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ── D.9: Full Regression H5 ──────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Full OLS regression output for H5: financial literacy $\times$ condition interaction on delegative trust.}
+\label{tab:supp_reg_h5}
+\begin{small}
+\begin{tabular}{lr@{\hskip 6pt}r@{\hskip 6pt}r@{\hskip 6pt}r}
+\toprule
+Predictor & $B$ & SE & $t$ & $p$ \\
+\midrule
+Intercept                               &  3.435 & 0.577 &  5.96 & $< .001$\rlap{***} \\
+Condition A                             & $-0.042$ & 0.377 & $-0.11$ & .911 \\
+Condition B                             &  0.259 & 0.368 &  0.70 & .482 \\
+Financial literacy (high)               & $-0.407$ & 0.318 & $-1.28$ & .201 \\
+Condition A $\times$ Fin.\ lit.\ (high) &  0.072 & 0.433 &  0.17 & .869 \\
+Condition B $\times$ Fin.\ lit.\ (high) & $-0.109$ & 0.424 & $-0.26$ & .797 \\
+Age                                     &  0.004 & 0.006 &  0.70 & .484 \\
+Robo-advisor experience                 &  0.729 & 0.227 &  3.21 & .001\rlap{**} \\
+Comprehension check (pass)              &  0.066 & 0.201 &  0.33 & .743 \\
+Attention check (pass)                  &  0.418 & 0.415 &  1.01 & .314 \\
+\midrule
+$R^2$ & \multicolumn{4}{l}{0.052} \\
+Adj.\ $R^2$ & \multicolumn{4}{l}{0.027} \\
+$N$ & \multicolumn{4}{l}{354} \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Reference category: Condition C, low financial literacy (score 0--1). High financial literacy defined as score 2--3 on the Lusardi--Mitchell Big Three. The condition $\times$ literacy interactions are non-significant, indicating that the framing effects (or lack thereof) do not vary by financial sophistication.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+% ── D.10: Exploratory Analyses ────────────────────────────────────────
+
+\begin{table}[ht]
+\centering
+\begin{threeparttable}
+\caption{Exploratory analyses E1--E3 ($N = 354$).}
+\label{tab:supp_exploratory}
+\begin{small}
+\textit{Panel A: E1 --- Variance prediction (Levene's test)}
+
+\medskip
+\begin{tabular}{lcccc}
+\toprule
+DV & $F(2, 351)$ & $p$ & $\sigma^2_A$ / $\sigma^2_B$ / $\sigma^2_C$ & Supported \\
+\midrule
+Delegative trust & 0.318 & .728 & 1.94 / 2.18 / 1.92 & No \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textit{Panel B: E2 --- Comprehension check as signal of trust mode}
+
+\medskip
+\begin{tabular}{llcccl}
+\toprule
+DV & Test & Pass $M$ & Fail $M$ & $p$ & Direction \\
+\midrule
+Delegative trust  & $t$-test & 3.90 & 3.97 & .739 & Fail $>$ Pass \\
+Evaluative trust  & $t$-test & 5.34 & 5.11 & .110 & Pass $>$ Fail \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textit{Panel C: E3 --- Robo-advisor experience $\times$ condition interactions}
+
+\medskip
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Cond.\ A $\times$ Robo} & \multicolumn{2}{c}{Cond.\ B $\times$ Robo} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+DV & $B$ & $p$ & $B$ & $p$ \\
+\midrule
+Evaluative trust   &  0.358 & .408 &  0.164 & .680 \\
+Delegative trust   &  0.211 & .720 & $-0.072$ & .894 \\
+Betrayal           &  0.728 & .284 & $-0.667$ & .285 \\
+Disappointment     &  1.174 & .022* &  0.645 & .168 \\
+Betrayal premium   & $-0.446$ & .510 & $-1.313$ & .035* \\
+General exit       &  0.598 & .383 &  0.584 & .354 \\
+Algorithm aversion &  0.535 & .391 & $-0.519$ & .365 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item \textit{E1:} Prediction that Condition A produces higher variance on delegative trust was not supported. \textit{E2:} Comprehension check pass rates were comparable across conditions (A: 80.9\%, B: 81.1\%, C: 83.0\%; $N_\text{pass} = 289$, $N_\text{fail} = 65$). Directional trends are consistent with E2 predictions but do not reach significance. \textit{E3:} Two of 14 interaction tests reach significance: robo-advisor experience moderates disappointment in Condition A ($p = .022$) and betrayal premium in Condition B ($p = .035$). Given 14 tests, these may reflect chance.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

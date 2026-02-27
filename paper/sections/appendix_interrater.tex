@@ -1,1 +1,236 @@
-\TODO{Report inter-rater reliability details: Sonnet vs.\ GPT-4o agreement rates, Cohen's kappa, confusion matrices, and disagreement analysis.}
+This appendix reports the full inter-rater reliability analysis for the CFPB classification system. Three raters classified a confidence-stratified subsample of 100 narratives: one human coder (the first author) and two large language models (Claude Sonnet and GPT-4o). Full-sample concordance statistics are reported for the dual-model classification of all 8,943 narratives classified by both models.
+
+\subsection{Human Validation Sample}
+
+The 100-narrative subsample was stratified by Sonnet confidence level to ensure representation across the classification difficulty spectrum: 30 low-confidence narratives (Sonnet confidence $< 0.75$), 40 medium-confidence narratives ($0.75$--$0.85$), and 30 high-confidence narratives ($> 0.85$). The human coder classified each narrative independently using the same construct definitions provided to the AI models (\Cref{app:cfpb_prompt}), recording a categorical classification (evaluative, delegative, or unclassifiable), continuous delegative and evaluative scores (0--1, using a slider input rounded to 0.1 increments), and a categorical confidence rating (high, medium, or low).
+
+\subsection{Pairwise Categorical Agreement}
+
+\begin{table}[ht]
+\centering
+\caption{Pairwise categorical agreement on 100-narrative validation subsample.}
+\label{tab:pairwise_kappa}
+\begin{tabular}{lcccc}
+\toprule
+Pair & Cohen's $\kappa$ & 95\% CI & \% Agreement & Interpretation \\
+\midrule
+Human vs.\ Sonnet  & 0.264 & [0.136, 0.397] & 54.0\% & Fair \\
+Human vs.\ GPT-4o  & 0.361 & [0.207, 0.507] & 62.0\% & Fair \\
+Sonnet vs.\ GPT-4o & 0.590 & [0.442, 0.725] & 77.0\% & Moderate \\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item Interpretation benchmarks follow \citet{landis1977}: $< 0.20$ poor, $0.21$--$0.40$ fair, $0.41$--$0.60$ moderate, $0.61$--$0.80$ substantial, $0.81$--$1.00$ almost perfect.
+\end{tablenotes}
+\end{table}
+
+\subsection{Pairwise Continuous Score Correlations}
+
+Human scores were recorded using 0.1-increment slider input; LLM scores are continuous floats. Correlations are computed on raw values.
+
+\begin{table}[ht]
+\centering
+\caption{Pairwise correlations for delegative scores ($N = 100$).}
+\label{tab:deleg_corr}
+\begin{tabular}{lcccc}
+\toprule
+Pair & Pearson $r$ & $p$ & Spearman $\rho$ & $p$ \\
+\midrule
+Human vs.\ Sonnet  & .488 & $2.65 \times 10^{-7}$  & .377 & $1.11 \times 10^{-4}$ \\
+Human vs.\ GPT-4o  & .511 & $5.69 \times 10^{-8}$  & .372 & $1.40 \times 10^{-4}$ \\
+Sonnet vs.\ GPT-4o & .776 & $2.50 \times 10^{-21}$ & .827 & $3.00 \times 10^{-26}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Pairwise correlations for evaluative scores ($N = 100$).}
+\label{tab:eval_corr}
+\begin{tabular}{lcccc}
+\toprule
+Pair & Pearson $r$ & $p$ & Spearman $\rho$ & $p$ \\
+\midrule
+Human vs.\ Sonnet  & .308 & $1.83 \times 10^{-3}$  & .400 & $3.68 \times 10^{-5}$ \\
+Human vs.\ GPT-4o  & .402 & $3.31 \times 10^{-5}$  & .458 & $1.62 \times 10^{-6}$ \\
+Sonnet vs.\ GPT-4o & .779 & $1.33 \times 10^{-21}$ & .818 & $3.06 \times 10^{-25}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Confusion Matrices}
+
+\begin{table}[ht]
+\centering
+\caption{Confusion matrix: Human vs.\ Sonnet ($N = 100$).}
+\label{tab:cm_human_sonnet}
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{Sonnet} & \\
+\cmidrule(lr){2-4}
+Human & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 29 & 10 &  0 &  39 \\
+Delegative      &  1 &  4 &  0 &   5 \\
+Unclassifiable  & 34 &  1 & 21 &  56 \\
+\midrule
+Total           & 64 & 15 & 21 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Confusion matrix: Human vs.\ GPT-4o ($N = 100$).}
+\label{tab:cm_human_gpt4o}
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Human & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 30 &  4 &  5 &  39 \\
+Delegative      &  1 &  4 &  0 &   5 \\
+Unclassifiable  & 24 &  4 & 28 &  56 \\
+\midrule
+Total           & 55 & 12 & 33 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Confusion matrix: Sonnet vs.\ GPT-4o ($N = 100$).}
+\label{tab:cm_sonnet_gpt4o}
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Sonnet & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 49 &  4 & 11 &  64 \\
+Delegative      &  5 &  8 &  2 &  15 \\
+Unclassifiable  &  1 &  0 & 20 &  21 \\
+\midrule
+Total           & 55 & 12 & 33 & 100 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Confidence-Stratified Agreement}
+
+\begin{table}[ht]
+\centering
+\caption{Pairwise agreement rates by Sonnet confidence stratum ($N = 100$).}
+\label{tab:conf_strat}
+\begin{tabular}{lcccc}
+\toprule
+Confidence Bin & $N$ & Human--Sonnet & Human--GPT-4o & Sonnet--GPT-4o \\
+\midrule
+Low ($< 0.75$)       & 30 & 30.0\% & 50.0\% & 50.0\% \\
+Medium (0.75--0.85)  & 40 & 42.5\% & 50.0\% & 82.5\% \\
+High ($> 0.85$)      & 30 & 93.3\% & 90.0\% & 96.7\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Classification Distribution Comparison}
+
+\begin{table}[ht]
+\centering
+\caption{Classification distribution across raters ($N = 100$).}
+\label{tab:class_dist}
+\begin{tabular}{lccc}
+\toprule
+Category & Human & Sonnet & GPT-4o \\
+\midrule
+Evaluative      & 39 (39\%) & 64 (64\%) & 55 (55\%) \\
+Delegative      &  5 (5\%)  & 15 (15\%) & 12 (12\%) \\
+Unclassifiable  & 56 (56\%) & 21 (21\%) & 33 (33\%) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The human coder classified substantially more narratives as unclassifiable (56\%) than either AI model (Sonnet: 21\%, GPT-4o: 33\%), reflecting a higher threshold for inferring trust-relevant language from factual complaint descriptions.
+
+\subsection{Disagreement Pattern Analysis}
+
+Of the 100 narratives, 49 received unanimous agreement across all three raters. The remaining 51 disagreements followed systematic patterns (\Cref{tab:disagree_patterns}).
+
+\begin{table}[ht]
+\centering
+\caption{Systematic disagreement patterns ($N = 51$ discordant cases).}
+\label{tab:disagree_patterns}
+\begin{tabular}{lllr}
+\toprule
+Human & Sonnet & GPT-4o & Count \\
+\midrule
+Unclassifiable & Evaluative  & Evaluative      & 23 \\
+Unclassifiable & Evaluative  & Unclassifiable  &  8 \\
+Evaluative     & Delegative  & Evaluative      &  4 \\
+Evaluative     & Delegative  & Delegative      &  4 \\
+Unclassifiable & Evaluative  & Delegative      &  3 \\
+Evaluative     & Evaluative  & Unclassifiable  &  3 \\
+Evaluative     & Delegative  & Unclassifiable  &  2 \\
+\multicolumn{3}{l}{Other patterns}              &  4 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dominant disagreement pattern (23 of 51 cases, 45\%) involves both AI models classifying a narrative as evaluative where the human coded it as unclassifiable. These cases typically involve factual complaints describing service failures (account holds, missing documents, disputed charges) without explicit evaluative language. The AI models inferred frustrated performance expectations from the complaint structure; the human coder required more explicit evaluative vocabulary to assign the classification.
+
+\subsection{Illustrative Disagreement Cases}
+
+\begin{quote}
+\textbf{Case 1 (Complaint \#4121639, Checking/Savings, Chime Financial).} A consumer reports that Chime placed a hold on their account containing unemployment back pay and that they sent all requested documentation. The human coded this as \textsc{unclassifiable} (``factual''), while both Sonnet and GPT-4o coded it as \textsc{evaluative}, interpreting the account hold despite compliance with documentation requests as an implicit performance failure. This illustrates the threshold difference: the human required explicit evaluative language, while the models inferred it from the service failure structure.
+\end{quote}
+
+\begin{quote}
+\textbf{Case 2 (Complaint \#10717654, Mortgage, Mr.\ Cooper).} A consumer reports missing loan documents, discrepancies in payoff quotes, and COVID deferral payments reported as delinquent. The human coded this as \textsc{unclassifiable} (``factual, no evaluative or delegative language''), while both models coded it as \textsc{evaluative}, interpreting the document failures and credit reporting errors as implicit performance complaints. Again, the complaint describes functional failures without using the language of frustrated expectations.
+\end{quote}
+
+\begin{quote}
+\textbf{Case 3 (Complaint \#7441427, Credit Card, Wells Fargo).} A consumer reports disputed fraudulent charges that Wells Fargo repeatedly denied. The human coded this as \textsc{evaluative} (noting ``frustrated expectations''), Sonnet coded it as \textsc{delegative} (citing ``I feel like I'm not being heard''), and GPT-4o coded it as \textsc{evaluative} (focusing on incorrect charges). This case illustrates genuine construct ambiguity: the complaint contains both evaluative elements (the fraud process failed) and delegative elements (the relationship feels unresponsive), and reasonable coders disagree about which mode dominates.
+\end{quote}
+
+\subsection{Full-Sample Dual-Model Concordance ($N = 8{,}943$)}
+\label{sec:full_concordance}
+
+For reference, the full-sample concordance statistics for the complete CFPB dataset are reported here and discussed in \Cref{sec:results_cfpb}.
+
+\begin{table}[ht]
+\centering
+\caption{Full-sample concordance: Sonnet vs.\ GPT-4o ($N = 8{,}943$). Overall agreement: 7,369/8,943 (82.4\%), $\kappa = 0.556$.}
+\label{tab:full_concordance}
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Sonnet & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 6,037 & 351 & 575 & 6,963 \\
+Delegative      &   519 & 877 &  81 & 1,477 \\
+Unclassifiable  &    30 &  18 & 455 &   503 \\
+\midrule
+Total           & 6,586 & 1,246 & 1,111 & 8,943 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Concordant cases by product category ($N = 8{,}943$).}
+\label{tab:product_agreement}
+\begin{tabular}{lccr}
+\toprule
+Product & Concordant & Discordant & Agreement \\
+\midrule
+Mortgage          & 2,472 & 502 & 83.1\% \\
+Checking/Savings  & 2,405 & 580 & 80.6\% \\
+Credit Card       & 2,492 & 492 & 83.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Continuous score correlations between models ($N = 8{,}943$): delegative $r = .703$ ($\rho = .738$), evaluative $r = .680$ ($\rho = .713$), all $p < .001$.

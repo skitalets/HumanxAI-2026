@@ -1,1 +1,101 @@
-\TODO{Include the full CFPB classification prompt used for Sonnet and GPT-4o, with the evaluative/delegative trust coding rubric.}
+The following prompt was used identically for both Claude Sonnet (Anthropic) and GPT-4o (OpenAI) classifications. Each model received the prompt once per narrative, with temperature set to $0.0$ (deterministic output) and a maximum output length of 300 tokens. No product type or company name was passed to the classifier, preventing hypothesis leakage. The prompt consists of a system prompt defining the construct framework and a user prompt specifying the required output format.
+
+\subsection{System Prompt}
+
+\begin{quote}
+\begin{small}
+\begin{verbatim}
+You are a research assistant classifying consumer financial
+complaints for an academic study on trust in financial
+relationships.
+
+The study distinguishes two modes of trust failure:
+
+EVALUATIVE TRUST FAILURE: The consumer's complaint is primarily
+about unmet performance expectations, functional problems, or
+verification failures. The consumer treats the financial
+institution as a service provider that failed to deliver. Language
+focuses on: incorrect charges, broken processes, unmet promises,
+poor service quality, failure to perform as advertised. The
+emotional register is frustration, dissatisfaction, or anger at
+incompetence. The consumer's implicit stance is: "You didn't do
+what you were supposed to do."
+
+DELEGATIVE TRUST FAILURE: The consumer's complaint reflects
+betrayal of a relationship in which they had granted the
+institution discretionary authority or relied on it as a fiduciary.
+Language focuses on: betrayal, abandonment, broken loyalty, abuse
+of the relationship, violation of good faith, taking advantage of
+vulnerability. The emotional register is moral outrage, a sense of
+personal violation, or grief at a relationship destroyed. The
+consumer's implicit stance is: "I trusted you and you betrayed me."
+
+UNCLASSIFIABLE: The complaint does not clearly reflect either trust
+mode. This includes: template/form letters, pure factual disputes
+with no emotional content, identity theft reports where the
+consumer has no relationship with the institution, complaints too
+brief or unclear to assess, or complaints that mix both modes
+without a dominant one.
+
+Important: Many complaints will be unclassifiable. That is
+expected. Do not force a classification. Only assign EVALUATIVE or
+DELEGATIVE when the language clearly reflects one mode.
+\end{verbatim}
+\end{small}
+\end{quote}
+
+\subsection{User Prompt Template}
+
+For each narrative, the following user prompt was appended after the system prompt, with the complaint text inserted in place of the placeholder:
+
+\begin{quote}
+\begin{small}
+\begin{verbatim}
+Classify this consumer financial complaint. Respond in exactly
+this JSON format:
+
+{
+  "classification": "EVALUATIVE" | "DELEGATIVE" | "UNCLASSIFIABLE",
+  "confidence": <float 0.0 to 1.0>,
+  "primary_evidence": "<one sentence quoting or paraphrasing the
+    specific language that drove your classification>",
+  "secondary_signals": "<one sentence noting any additional
+    signals, or 'none'>",
+  "delegative_score": <float 0.0 to 1.0>,
+  "evaluative_score": <float 0.0 to 1.0>
+}
+
+The delegative_score and evaluative_score are independent
+dimensions, not a zero-sum scale. A complaint can score high on
+both (mixed), low on both (unclassifiable), or high on one and
+low on the other (clean classification).
+
+COMPLAINT:
+"""
+[Narrative text inserted here]
+"""
+\end{verbatim}
+\end{small}
+\end{quote}
+
+\subsection{Classification Parameters}
+
+Both models were configured with identical parameters to ensure comparability. \Cref{tab:classify_params} summarizes the classification pipeline settings.
+
+\begin{table}[ht]
+\centering
+\caption{Classification pipeline parameters.}
+\label{tab:classify_params}
+\begin{tabular}{lll}
+\toprule
+Parameter & Claude Sonnet & GPT-4o \\
+\midrule
+Model version & \texttt{claude-sonnet-4-5-20250929} & \texttt{gpt-4o} \\
+Temperature & 0.0 & 0.0 \\
+Max output tokens & 300 & 300 \\
+Concurrent requests & 20 & 5 \\
+Retry logic & Exponential backoff (5 attempts) & Exponential backoff (5 attempts) \\
+Narratives classified & 8,943 & 8,943 \\
+\bottomrule
+\end{tabular}
+\end{table}
