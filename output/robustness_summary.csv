@@ -1,0 +1,13 @@
+Hypothesis,Robustness_check,N,Direction,Significant,p_value,Change_from_primary
+H1a,Strict attention,342,B >= A,False,0.43401,Same
+H1a,Strict comprehension,289,B >= A,False,0.388908,Same
+H1b,Strict attention,342,A >= B,False,0.146868,Same
+H1b,Strict comprehension,289,A >= B,False,0.157055,Same
+H2,Strict attention,342,A > B,False,0.483205,Same
+H2,Strict comprehension,289,A > B,False,0.511325,Same
+H3,Strict attention,342,"eval_B=-0.058, deleg_B=-0.322",False,0.461575,Same
+H3,Strict comprehension,289,"eval_B=-0.047, deleg_B=-0.316",False,0.57385,Same
+H4,Strict attention,342,deleg_B=-0.207,True,0.001475,Same
+H4,Strict comprehension,289,deleg_B=-0.161,True,0.020741,Same
+H5,Strict attention,342,int_B=0.082,False,0.853538,Same
+H5,Strict comprehension,289,int_B=-0.269,False,0.60625,Same

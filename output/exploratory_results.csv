@@ -1,0 +1,11 @@
+Analysis,Test,Statistic,p_value,Result,Prediction_supported
+E1: Variance prediction,Levene's test,"F(2,351)=0.3175",0.728143,"A_var=1.9383, B_var=2.1757, C_var=1.9234",No
+E2a: Comp check → delegative trust,Independent t-test,t=-0.3329,0.739424,"pass_M=3.904, fail_M=3.969",Partial
+E2b: Comp check → evaluative trust,Independent t-test,t=1.6025,0.109947,"pass_M=5.339, fail_M=5.108",Partial
+E3: Robo experience × Condition → evaluative_trust,OLS w/ interaction,"int_A_B=0.358, int_B_B=0.164","int_A_p=0.408251, int_B_p=0.680116",Not significant,N/A (exploratory)
+E3: Robo experience × Condition → delegative_trust,OLS w/ interaction,"int_A_B=0.211, int_B_B=-0.072","int_A_p=0.720105, int_B_p=0.893883",Not significant,N/A (exploratory)
+E3: Robo experience × Condition → betrayal,OLS w/ interaction,"int_A_B=0.728, int_B_B=-0.667","int_A_p=0.284240, int_B_p=0.284835",Not significant,N/A (exploratory)
+E3: Robo experience × Condition → disappointment,OLS w/ interaction,"int_A_B=1.174, int_B_B=0.645","int_A_p=0.021665, int_B_p=0.168047",Significant,N/A (exploratory)
+E3: Robo experience × Condition → betrayal_premium,OLS w/ interaction,"int_A_B=-0.446, int_B_B=-1.313","int_A_p=0.509763, int_B_p=0.035099",Significant,N/A (exploratory)
+E3: Robo experience × Condition → general_exit,OLS w/ interaction,"int_A_B=0.598, int_B_B=0.584","int_A_p=0.383031, int_B_p=0.353710",Not significant,N/A (exploratory)
+E3: Robo experience × Condition → algorithm_aversion,OLS w/ interaction,"int_A_B=0.535, int_B_B=-0.519","int_A_p=0.391264, int_B_p=0.365225",Not significant,N/A (exploratory)

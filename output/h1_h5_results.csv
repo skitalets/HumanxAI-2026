@@ -1,0 +1,7 @@
+Hypothesis,Test,DV,Statistic,p_value,Effect_size,Prediction_supported
+H1a,One-way ANOVA,Delegative trust,"F(2,351)=0.7495",0.473341,η²=0.0043,No
+H1b,One-way ANOVA,Evaluative trust,"F(2,351)=1.4965",0.225337,η²=0.0085,No
+H2,One-way ANOVA,Betrayal premium,"F(2,351)=0.5732",0.564231,η²=0.0033,Partial
+H3,OLS Regression,Algorithm aversion,"F(9,344)=6.8169",0.0,R²=0.1514,No
+H4,OLS Regression,General exit,"F(9,344)=2.1824",0.022801,R²=0.0540,Yes
+H5,OLS Regression w/ interaction,Delegative trust,"F(9,344)=2.0772",0.030922,R²=0.0515,Partial
