@@ -6,7 +6,7 @@ The 100-narrative subsample was stratified by Sonnet confidence level to ensure 
 
 \subsection{Pairwise Categorical Agreement}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Pairwise categorical agreement on 100-narrative validation subsample.}
 \label{tab:pairwise_kappa}
@@ -29,7 +29,7 @@ Sonnet vs.\ GPT-4o & 0.590 & [0.442, 0.725] & 77.0\% & Moderate \\
 
 Human scores were recorded using 0.1-increment slider input; LLM scores are continuous floats. Correlations are computed on raw values.
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Pairwise correlations for delegative scores ($N = 100$).}
 \label{tab:deleg_corr}
@@ -44,7 +44,7 @@ Sonnet vs.\ GPT-4o & .776 & $2.50 \times 10^{-21}$ & .827 & $3.00 \times 10^{-26
 \end{tabular}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Pairwise correlations for evaluative scores ($N = 100$).}
 \label{tab:eval_corr}
@@ -61,7 +61,7 @@ Sonnet vs.\ GPT-4o & .779 & $1.33 \times 10^{-21}$ & .818 & $3.06 \times 10^{-25
 
 \subsection{Confusion Matrices}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Confusion matrix: Human vs.\ Sonnet ($N = 100$).}
 \label{tab:cm_human_sonnet}
@@ -80,7 +80,7 @@ Total           & 64 & 15 & 21 & 100 \\
 \end{tabular}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Confusion matrix: Human vs.\ GPT-4o ($N = 100$).}
 \label{tab:cm_human_gpt4o}
@@ -99,7 +99,7 @@ Total           & 55 & 12 & 33 & 100 \\
 \end{tabular}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Confusion matrix: Sonnet vs.\ GPT-4o ($N = 100$).}
 \label{tab:cm_sonnet_gpt4o}
@@ -120,7 +120,7 @@ Total           & 55 & 12 & 33 & 100 \\
 
 \subsection{Confidence-Stratified Agreement}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Pairwise agreement rates by Sonnet confidence stratum ($N = 100$).}
 \label{tab:conf_strat}
@@ -137,7 +137,7 @@ High ($> 0.85$)      & 30 & 93.3\% & 90.0\% & 96.7\% \\
 
 \subsection{Classification Distribution Comparison}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Classification distribution across raters ($N = 100$).}
 \label{tab:class_dist}
@@ -158,7 +158,7 @@ The human coder classified substantially more narratives as unclassifiable (56\%
 
 Of the 100 narratives, 49 received unanimous agreement across all three raters. The remaining 51 disagreements followed systematic patterns (\Cref{tab:disagree_patterns}).
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Systematic disagreement patterns ($N = 51$ discordant cases).}
 \label{tab:disagree_patterns}
@@ -199,7 +199,7 @@ The dominant disagreement pattern (23 of 51 cases, 45\%) involves both AI models
 
 For reference, the full-sample concordance statistics for the complete CFPB dataset are reported here and discussed in \Cref{sec:results_cfpb}.
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Full-sample concordance: Sonnet vs.\ GPT-4o ($N = 8{,}943$). Overall agreement: 7,369/8,943 (82.4\%), $\kappa = 0.556$.}
 \label{tab:full_concordance}
@@ -218,19 +218,99 @@ Total           & 6,586 & 1,246 & 1,111 & 8,943 \\
 \end{tabular}
 \end{table}
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
-\caption{Concordant cases by product category ($N = 8{,}943$).}
-\label{tab:product_agreement}
-\begin{tabular}{lccr}
+\begin{threeparttable}
+\caption{Per-product confusion matrices: Sonnet vs.\ GPT-4o ($N = 8{,}943$).}
+\label{tab:product_confusion}
+\begin{small}\centering
+\textit{Panel A: Mortgage ($n = 2{,}974$; agreement = 83.1\%, $\kappa = 0.571$)}
+
+\medskip
+\begin{tabular}{lcccr}
 \toprule
-Product & Concordant & Discordant & Agreement \\
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Sonnet & Evaluative & Delegative & Unclassifiable & Total \\
 \midrule
-Mortgage          & 2,472 & 502 & 83.1\% \\
-Checking/Savings  & 2,405 & 580 & 80.6\% \\
-Credit Card       & 2,492 & 492 & 83.5\% \\
+Evaluative      & 1{,}996 & 170 & 108 & 2{,}274 \\
+Delegative      &     187 & 414 &  24 &    625 \\
+Unclassifiable  &       8 &   5 &  62 &     75 \\
+\midrule
+Total           & 2{,}191 & 589 & 194 & 2{,}974 \\
 \bottomrule
 \end{tabular}
+
+\bigskip
+\textit{Panel B: Checking/Savings ($n = 2{,}985$; agreement = 80.6\%, $\kappa = 0.530$)}
+
+\medskip
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Sonnet & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 1{,}958 & 106 & 264 & 2{,}328 \\
+Delegative      &     161 & 286 &  38 &    485 \\
+Unclassifiable  &       8 &   3 & 161 &    172 \\
+\midrule
+Total           & 2{,}127 & 395 & 463 & 2{,}985 \\
+\bottomrule
+\end{tabular}
+
+\bigskip
+\textit{Panel C: Credit Card ($n = 2{,}984$; agreement = 83.5\%, $\kappa = 0.560$)}
+
+\medskip
+\begin{tabular}{lcccr}
+\toprule
+ & \multicolumn{3}{c}{GPT-4o} & \\
+\cmidrule(lr){2-4}
+Sonnet & Evaluative & Delegative & Unclassifiable & Total \\
+\midrule
+Evaluative      & 2{,}083 &  75 & 203 & 2{,}361 \\
+Delegative      &     171 & 177 &  19 &    367 \\
+Unclassifiable  &      14 &  10 & 232 &    256 \\
+\midrule
+Total           & 2{,}268 & 262 & 454 & 2{,}984 \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Rows = Claude 3.5 Sonnet (\texttt{claude-3-5-sonnet-20241022}) classification. Columns = GPT-4o classification. Diagonal cells represent inter-model agreement. Credit card shows the highest agreement (83.5\%) despite having the lowest delegative base rate, while checking/savings shows the lowest (80.6\%), driven primarily by Sonnet--evaluative / GPT-4o--unclassifiable disagreements.
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 Continuous score correlations between models ($N = 8{,}943$): delegative $r = .703$ ($\rho = .738$), evaluative $r = .680$ ($\rho = .713$), all $p < .001$.
+
+\subsection{Full-Sample Confidence-Stratified Concordance}
+
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\caption{Confidence-stratified inter-model agreement and human validation ($N_\text{full} = 8{,}943$; $N_\text{human} = 100$).}
+\label{tab:conf_strat_full}
+\begin{small}
+\begin{tabular}{llccccc}
+\toprule
+ & & \multicolumn{2}{c}{Full sample} & \multicolumn{3}{c}{Human validation} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-7}
+Stratum & Range & $N$ & Agreement & $N$ & Human--Sonnet & Human--GPT-4o \\
+\midrule
+Low     & 0.51--0.78 & 3{,}759 & 68.8\% & 30 & 30.0\% & 50.0\% \\
+Medium  & 0.78--0.83 & 3{,}124 & 87.7\% & 40 & 42.5\% & 50.0\% \\
+High    & 0.85--0.97 & 2{,}060 & 99.2\% & 30 & 93.3\% & 90.0\% \\
+\midrule
+Overall & ---        & 8{,}943 & 82.4\% & 100 & 54.0\% & 62.0\% \\
+\bottomrule
+\end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Full-sample strata are terciles of mean classifier confidence (average of Sonnet and GPT-4o confidence ratings). Human validation strata use Sonnet confidence bins from the stratified sampling design (low $< 0.75$, medium 0.75--0.85, high $> 0.85$). Strata boundaries differ slightly between the two analyses because the full sample uses distributional terciles while the validation sample used pre-specified thresholds. Full-sample Cohen's $\kappa$: low = 0.356, medium = 0.652, high = 0.970, overall = 0.556. At high confidence, both inter-model and human--model agreement converge above 90\%, supporting reliance on high-confidence automated classifications.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}

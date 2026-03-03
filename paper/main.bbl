@@ -5,6 +5,12 @@ Baier, A. (1986).
 \newblock Trust and antitrust.
 \newblock {\em Ethics}, 96(2):231--260.
 
+\bibitem[Belanche et~al., 2019]{BelancheCasaloFlavian2019}
+Belanche, D., Casal\'{o}, L.~V., and Flavi\'{a}n, C. (2019).
+\newblock Artificial intelligence in {FinTech}: Understanding robo-advisors
+  adoption among customers.
+\newblock {\em Industrial Management \& Data Systems}, 119(7):1411--1430.
+
 \bibitem[Berg et~al., 1995]{BergDickhautMcCabe1995}
 Berg, J., Dickhaut, J., and McCabe, K. (1995).
 \newblock Trust, reciprocity, and social history.
@@ -14,6 +20,12 @@ Berg, J., Dickhaut, J., and McCabe, K. (1995).
 Bigman, Y.~E. and Gray, K. (2018).
 \newblock People are averse to machines making moral decisions.
 \newblock {\em Cognition}, 181:21--34.
+
+\bibitem[Burton et~al., 2020]{BurtonSteinJensen2020}
+Burton, J.~W., Stein, M.-K., and Jensen, T.~B. (2020).
+\newblock A systematic review of algorithm aversion in augmented decision
+  making.
+\newblock {\em Journal of Behavioral Decision Making}, 33(2):220--239.
 
 \bibitem[Carter et~al., 2020]{CarterSpencerSimion2020}
 Carter, J.~A., Spencer, E., and Simion, M. (2020).
@@ -42,10 +54,20 @@ Dietvorst, B.~J., Simmons, J.~P., and Massey, C. (2018).
   if they can (even slightly) modify them.
 \newblock {\em Management Science}, 64(3):1155--1170.
 
+\bibitem[Foerster et~al., 2017]{FoersterEtAl2017}
+Foerster, S., Linnainmaa, J.~T., Melzer, B.~T., and Previtero, A. (2017).
+\newblock Retail financial advice: Does one size fit all?
+\newblock {\em Journal of Finance}, 72(4):1441--1482.
+
 \bibitem[Gennaioli et~al., 2015]{GennaioliShleiferVishny2015}
 Gennaioli, N., Shleifer, A., and Vishny, R. (2015).
 \newblock Money doctors.
 \newblock {\em Journal of Finance}, 70(1):91--114.
+
+\bibitem[Glikson and Woolley, 2020]{GliksonWoolley2020}
+Glikson, E. and Woolley, A.~W. (2020).
+\newblock Human trust in artificial intelligence: Review of empirical research.
+\newblock {\em Academy of Management Annals}, 14(2):627--660.
 
 \bibitem[Grossman and Hart, 1986]{GrossmanHart1986}
 Grossman, S.~J. and Hart, O.~D. (1986).
@@ -83,6 +105,12 @@ Hawley, K. (2014).
 \newblock Trust, distrust and commitment.
 \newblock {\em No\^{u}s}, 48(1):1--20.
 
+\bibitem[Hermann and Alberhasky, 2026]{HermannAlberhasky2026}
+Hermann, E. and Alberhasky, M. (2026).
+\newblock The trusted partner for financial decision making: Romantic partner
+  or {AI}?
+\newblock {\em Computers in Human Behavior}, 177:108877.
+
 \bibitem[Holton, 1994]{Holton1994}
 Holton, R. (1994).
 \newblock Deciding to trust, coming to believe.
@@ -94,6 +122,12 @@ Hopp, F.~R., Fisher, J.~T., Cornell, D., Huskey, R., and Weber, R. (2021).
   applications of a crowd-sourced approach to extracting moral intuitions from
   text.
 \newblock {\em Behavior Research Methods}, 53:232--246.
+
+\bibitem[Huang et~al., 2026]{HuangEtAl2026}
+Huang, S., Chang, C.-Y., Park, S., Dinh, M.~C., and Zhu, J. N.~Y. (2026).
+\newblock Advice by algorithms: Dual dimensions of trust in {AI} financial
+  service adoption.
+\newblock {\em Journal of Retailing and Consumer Services}, 88:104509.
 
 \bibitem[Jensen and Meckling, 1976]{JensenMeckling1976}
 Jensen, M.~C. and Meckling, W.~H. (1976).
@@ -141,6 +175,11 @@ Logg, J.~M., Minson, J.~A., and Moore, D.~A. (2019).
 \newblock {\em Organizational Behavior and Human Decision Processes},
   151:90--103.
 
+\bibitem[Longoni et~al., 2019]{LongoniBonezziMorewedge2019}
+Longoni, C., Bonezzi, A., and Morewedge, C.~K. (2019).
+\newblock Resistance to medical artificial intelligence.
+\newblock {\em Journal of Consumer Research}, 46(4):629--650.
+
 \bibitem[Lusardi and Mitchell, 2014]{LusardiMitchell2014}
 Lusardi, A. and Mitchell, O.~S. (2014).
 \newblock The economic importance of financial literacy: Theory and evidence.
@@ -151,6 +190,12 @@ Madhavan, P. and Wiegmann, D.~A. (2007).
 \newblock Similarities and differences between human--human and
   human--automation trust: An integrative review.
 \newblock {\em Theoretical Issues in Ergonomics Science}, 8(4):277--301.
+
+\bibitem[Mahmud et~al., 2022]{MahmudIslamEtAl2022}
+Mahmud, H., Islam, A. K. M.~N., Ahmed, S.~I., and Smolander, K. (2022).
+\newblock What influences algorithmic decision-making? {A} systematic
+  literature review on algorithm aversion.
+\newblock {\em Technological Forecasting and Social Change}, 175:121390.
 
 \bibitem[Mayer et~al., 1995]{MayerDavisSchoorman1995}
 Mayer, R.~C., Davis, J.~H., and Schoorman, F.~D. (1995).
@@ -199,6 +244,12 @@ Rossi, A.~G. and Utkus, S.~P. (2020).
 Sapienza, P. and Zingales, L. (2012).
 \newblock A trust crisis.
 \newblock {\em International Review of Finance}, 12(2):123--131.
+
+\bibitem[Schilke and Reimann, 2025]{SchilkeReimann2025}
+Schilke, O. and Reimann, M. (2025).
+\newblock The transparency dilemma: How {AI} disclosure erodes trust.
+\newblock {\em Organizational Behavior and Human Decision Processes},
+  188:104405.
 
 \bibitem[Strawson, 1962]{Strawson1962}
 Strawson, P.~F. (1962).

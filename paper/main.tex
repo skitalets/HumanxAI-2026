@@ -115,6 +115,10 @@ evaluative trust, financial advice, behavioral finance, NLP, survey experiment
 % --- Appendices ---
 \clearpage
 \appendix
+\renewcommand{\thetable}{\thesection.\arabic{table}}
+\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
 
 \section{CFPB Classification Prompt}
 \label{app:cfpb_prompt}

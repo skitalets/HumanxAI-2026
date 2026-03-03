@@ -4,26 +4,34 @@
 
 % ── D.1: eMFD by Classification ──────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
-\caption{Extended Moral Foundations Dictionary (eMFD) scores by trust classification category ($N = 8{,}991$). Values are mean probability scores with standard deviations in parentheses.}
+\begin{threeparttable}
+\caption{eMFD moral foundations validation: evaluative vs.\ delegative classifications ($N_\text{eval} = 6{,}963$; $N_\text{deleg} = 1{,}477$).}
 \label{tab:supp_emfd_class}
-\begin{tabular}{lccc}
+\begin{small}
+\begin{tabular}{lccccr}
 \toprule
-Foundation & Evaluative & Delegative & Unclassifiable \\
+Foundation & Evaluative $M$ (SD) & Delegative $M$ (SD) & Cohen's $d$ & $t$ & $p$ \\
 \midrule
-Care      & 0.02673 (0.00598) & 0.02806 (0.00537) & 0.02852 (0.00824) \\
-Fairness  & 0.03052 (0.00696) & 0.03156 (0.00607) & 0.03244 (0.00923) \\
-Loyalty   & 0.02311 (0.00489) & 0.02434 (0.00434) & 0.02420 (0.00695) \\
-Authority & 0.02428 (0.00548) & 0.02478 (0.00463) & 0.02603 (0.00732) \\
-Sanctity  & 0.01999 (0.00461) & 0.02115 (0.00423) & 0.02185 (0.00716) \\
+Care      & .02673 (.00598) & .02807 (.00537) & 0.228 &  8.52 & $< .001$\rlap{***} \\
+Fairness  & .03053 (.00696) & .03156 (.00606) & 0.151 &  5.78 & $< .001$\rlap{***} \\
+Loyalty   & .02311 (.00489) & .02434 (.00434) & 0.256 &  9.65 & $< .001$\rlap{***} \\
+Authority & .02429 (.00549) & .02478 (.00463) & 0.091 &  3.55 & $< .001$\rlap{***} \\
+Sanctity  & .01999 (.00461) & .02115 (.00423) & 0.255 &  9.42 & $< .001$\rlap{***} \\
 \bottomrule
 \end{tabular}
+\end{small}
+\begin{tablenotes}
+\small
+\item Values are mean eMFD probability scores (per-word moral foundation density) with standard deviations in parentheses. Classifications based on Sonnet model. Delegative complaints score significantly higher on all five moral foundations, with the strongest effects for loyalty ($d = 0.256$) and sanctity ($d = 0.255$). Welch's $t$-test (unequal variances); all comparisons survive Bonferroni correction ($\alpha / 5 = .01$). Cohen's $d$ computed with pooled standard deviation.
+\end{tablenotes}
+\end{threeparttable}
 \end{table}
 
 % ── D.2: eMFD by Product ─────────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{eMFD scores by product type ($N = 8{,}991$). Values are mean probability scores with standard deviations in parentheses.}
 \label{tab:supp_emfd_product}
@@ -42,11 +50,11 @@ Sanctity  & 0.01995 (0.00449) & 0.02046 (0.00495) & 0.02044 (0.00481) \\
 
 % ── D.3: Narrative Length ─────────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \caption{Narrative length (characters) by trust classification and product type.}
 \label{tab:supp_length}
-\begin{small}
+\begin{small}\centering
 \textit{Panel A: Sonnet classifications}
 
 \medskip
@@ -90,12 +98,12 @@ Credit Card       & Evaluative      & 2,268 & 1,305 & 1,002 & 1,124 \\
 
 % ── D.4: Length Regression ────────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{OLS regression: narrative length as predictor of Sonnet delegative score ($N = 8{,}943$).}
 \label{tab:supp_length_reg}
-\begin{small}
+\begin{small}\centering
 \textit{Panel A: Regression coefficients}
 
 \medskip
@@ -135,7 +143,7 @@ Gradient (max $-$ min) & 0.071 & 0.053 \\
 
 % ── D.5: Company Concentration ────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Company-level delegative proportion for mortgage complaints (companies with $\geq 50$ narratives, $N = 15$).}
@@ -176,7 +184,7 @@ LoanCare                    &  83 &  80 &  3 &  0 &  3.6 \\
 
 % ── D.6: Robustness — Strict Attention ────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Robustness check: hypothesis tests under strict attention exclusion ($N = 342$).}
@@ -205,7 +213,7 @@ H5 (Literacy $\times$ Cond.) & Interaction on delegative & $\beta_\text{int} = .
 
 % ── D.7: Robustness — Strict Comprehension ────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Robustness check: hypothesis tests under strict comprehension exclusion ($N = 289$).}
@@ -234,7 +242,7 @@ H5 (Literacy $\times$ Cond.) & Interaction on delegative & $\beta_\text{int} = -
 
 % ── D.8: Full Regression H3 + H4 ─────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Full OLS regression output for H3 (algorithm aversion) and H4 (general exit intent).}
@@ -271,7 +279,7 @@ $N$                    & 354               & 354 \\
 
 % ── D.9: Full Regression H5 ──────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Full OLS regression output for H5: financial literacy $\times$ condition interaction on delegative trust.}
@@ -307,12 +315,12 @@ $N$ & \multicolumn{4}{l}{354} \\
 
 % ── D.10: Exploratory Analyses ────────────────────────────────────────
 
-\begin{table}[ht]
+\begin{table}[H]
 \centering
 \begin{threeparttable}
 \caption{Exploratory analyses E1--E3 ($N = 354$).}
 \label{tab:supp_exploratory}
-\begin{small}
+\begin{small}\centering
 \textit{Panel A: E1 --- Variance prediction (Levene's test)}
 
 \medskip
