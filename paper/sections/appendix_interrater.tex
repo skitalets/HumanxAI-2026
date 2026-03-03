@@ -310,7 +310,7 @@ Overall & ---        & 8{,}943 & 82.4\% & 100 & 54.0\% & 62.0\% \\
 \end{small}
 \begin{tablenotes}
 \small
-\item Full-sample strata are terciles of mean classifier confidence (average of Sonnet and GPT-4o confidence ratings). Human validation strata use Sonnet confidence bins from the stratified sampling design (low $< 0.75$, medium 0.75--0.85, high $> 0.85$). Strata boundaries differ slightly between the two analyses because the full sample uses distributional terciles while the validation sample used pre-specified thresholds. Full-sample Cohen's $\kappa$: low = 0.356, medium = 0.652, high = 0.970, overall = 0.556. At high confidence, both inter-model and human--model agreement converge above 90\%, supporting reliance on high-confidence automated classifications.
+\item Full-sample strata are defined by fixed confidence thresholds (0.78, 0.85) applied to mean classifier confidence (average of Sonnet and GPT-4o confidence ratings). Human validation strata use Sonnet confidence bins from the stratified sampling design (low $< 0.75$, medium 0.75--0.85, high $> 0.85$). Strata boundaries differ slightly between the two analyses because the full sample uses fixed confidence thresholds while the validation sample used pre-specified bins. Full-sample Cohen's $\kappa$: low = 0.356, medium = 0.652, high = 0.970, overall = 0.556. At high confidence, both inter-model and human--model agreement converge above 90\%, supporting reliance on high-confidence automated classifications.
 \end{tablenotes}
 \end{threeparttable}
 \end{table}

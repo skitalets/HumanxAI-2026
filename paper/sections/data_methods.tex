@@ -17,7 +17,7 @@ We sampled 9,000 consumer complaint narratives from the CFPB database, equally d
 
 Each narrative was independently classified by two large language models --- Claude 3.5 Sonnet (Anthropic; \texttt{claude-3-5-sonnet-20241022}) and GPT-4o (OpenAI) --- using identical classification prompts. The prompts defined the evaluative and delegative trust constructs using language drawn from the theoretical framework and asked each model to provide three outputs for each narrative: (a)~a categorical classification (evaluative, delegative, or unclassifiable), (b)~continuous scores on each dimension (0--1 scale), and (c)~a confidence rating (0--1 scale). The dual-model approach serves as an automated inter-rater reliability check: agreement between independently developed language models, trained on different data and using different architectures, provides stronger evidence for classification validity than either model alone.
 
-Of the 9,000 narratives, Claude 3.5 Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,943 (99.4\%). All dual-model analyses use the $N = 8{,}943$ narratives successfully classified by both models.
+Of the 9,000 narratives, Claude 3.5 Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,952 (99.5\%). The two failure sets are completely disjoint --- no narrative failed in both models --- so the intersection comprises $N = 9{,}000 - 9 - 48 = 8{,}943$ narratives successfully classified by both. All dual-model analyses use this $N = 8{,}943$ sample.
 
 \subsubsection{Moral Foundations Validation}
 
@@ -75,7 +75,7 @@ All items used a 7-point Likert scale (1 = Strongly Disagree to 7 = Strongly Agr
 
 \paragraph{Financial literacy} (3 items). The \citet{LusardiMitchell2014} ``Big Three'' financial literacy battery: compound interest, inflation, and diversification items. Responses were coded as correct/incorrect and summed to create a 0--3 financial literacy composite.
 
-\paragraph{Attention check} (1 item). A directed-choice item administered in the demographic battery prior to condition assignment, instructing participants to select a specific response option. Participants who failed were excluded per the pre-registered protocol.
+\paragraph{Attention check} (1 item). A directed-choice item administered in the demographic battery prior to condition assignment, instructing participants to select a specific response option. The pre-registered exclusion rule uses a dual-failure criterion: participants were excluded from the primary sample only if they failed both the attention check and the comprehension check. Robustness analyses using a stricter attention-only exclusion rule ($N = 342$) and a comprehension-only rule ($N = 289$) produce identical patterns of significance.
 
 \paragraph{Demographics.} Age, income, investment experience, education, and prior robo-advisor experience, coded as a binary variable derived from a multi-select investment experience item that also captured human advisor use, self-directed brokerage investing, and employer retirement plan participation.
 
@@ -88,9 +88,9 @@ H1 (Trust Mode Separation) was tested via one-way ANOVA comparing evaluative and
 
 H2 (Betrayal Premium) was tested via one-way ANOVA comparing the betrayal premium (6a minus 6b) across conditions, with the prediction that Condition~A would produce the largest premium.
 
-H3 (Algorithm Aversion Mechanism) was tested via hierarchical multiple regression predicting algorithm aversion (Item~7b) from evaluative trust, delegative trust, and condition dummies, with the pre-registered prediction that evaluative trust would be the significant predictor.
+H3 (Algorithm Aversion Mechanism) was tested via OLS multiple regression predicting algorithm aversion (Item~7b) from evaluative trust, delegative trust, and condition dummies, with the pre-registered prediction that evaluative trust would be the significant predictor.
 
-H4 (Delegative Resilience) was tested via hierarchical multiple regression predicting exit intent (Item~7a) from evaluative trust, delegative trust, and condition dummies.
+H4 (Delegative Resilience) was tested via OLS multiple regression predicting exit intent (Item~7a) from evaluative trust, delegative trust, and condition dummies.
 
 H5 (Financial Literacy Interaction) was tested via moderated regression including a financial literacy $\times$ condition interaction term predicting delegative trust.
 

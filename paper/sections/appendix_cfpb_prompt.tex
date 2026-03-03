@@ -95,7 +95,12 @@ Temperature & 0.0 & 0.0 \\
 Max output tokens & 300 & 300 \\
 Concurrent requests & 20 & 5 \\
 Retry logic & Exponential backoff (5 attempts) & Exponential backoff (5 attempts) \\
-Narratives classified & 8,943 & 8,943 \\
+Valid classifications & 8,991 (99.9\%) & 8,952 (99.5\%) \\
+Dual-model intersection & \multicolumn{2}{c}{8,943} \\
 \bottomrule
 \end{tabular}
+\begin{flushleft}
+\footnotesize
+\textit{Note.} Valid classifications reflects each model's individual yield. The 9 Sonnet failures and 48 GPT-4o failures are completely disjoint, so the dual-model intersection is $9{,}000 - 9 - 48 = 8{,}943$.
+\end{flushleft}
 \end{table}

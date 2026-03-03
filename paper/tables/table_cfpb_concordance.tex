@@ -5,7 +5,7 @@
 \label{tab:cfpb_concordance}
 \begin{tabular}{llccc}
 \toprule
-Confidence tercile & Range & $N$ & Agreement & Cohen's $\kappa$ \\
+Confidence stratum & Range & $N$ & Agreement & Cohen's $\kappa$ \\
 \midrule
 Low     & 0.51--0.78 & 3{,}759 & 68.8\% & 0.356 \\
 Medium  & 0.78--0.83 & 3{,}124 & 87.7\% & 0.652 \\
@@ -16,6 +16,6 @@ Overall & ---        & 8{,}943 & 82.4\% & 0.556 \\
 \end{tabular}
 \begin{flushleft}
 \footnotesize
-\textit{Note.} Confidence is the mean of Sonnet and GPT-4o confidence ratings for each narrative. Tercile boundaries are based on the distribution of mean confidence scores. Agreement = percentage of narratives receiving the same categorical classification (evaluative, delegative, or unclassifiable) from both models. Cohen's $\kappa$ corrects for chance agreement.
+\textit{Note.} Confidence is the mean of Sonnet and GPT-4o confidence ratings for each narrative. Strata are defined by fixed confidence thresholds (0.78, 0.85) applied to the mean of Sonnet and GPT-4o confidence ratings, producing unequal group sizes that reflect the distribution of confidence scores. The empty interval (0.83--0.85) reflects a region of low density in the confidence distribution. Agreement = percentage of narratives receiving the same categorical classification (evaluative, delegative, or unclassifiable) from both models. Cohen's $\kappa$ corrects for chance agreement.
 \end{flushleft}
 \end{table}

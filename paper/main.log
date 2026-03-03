@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.26)  3 MAR 2026 20:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.2.26)  3 MAR 2026 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,20 +587,20 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ]) (./sections/theory.tex [6]
 [7] [8] [9] [10]
-Overfull \hbox (3.66971pt too wide) in paragraph at lines 88--89
+Overfull \hbox (3.66971pt too wide) in paragraph at lines 89--90
 []\T1/ppl/m/n/10 High-$\OML/zplm/m/it/10 ^^N$ \T1/ppl/m/n/10 in-vestors: $[]\OT
 1/zplm/m/n/10 ([])$ \T1/ppl/m/n/10 is low when $\OML/zplm/m/it/10 s[]$ \T1/ppl/
 m/n/10 car-ries only per-for-mance in-for-ma-tion, be-cause $\OML/zplm/m/it/10 
 @^^N\OT1/zplm/m/n/10 /\OML/zplm/m/it/10 @s[] \OMS/zplm/m/n/10 ^^Y
  []
 
-[11] [12] [13] [14] [15] [16]) (./sections/data_methods.tex
+[11] [12] [13] [14] [15] [16]) (./sections/data_methods.tex [17]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 8.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-) [17] [18] [19]
+) [18] [19]
 Overfull \hbox (0.64995pt too wide) in paragraph at lines 76--77
 \T1/ppl/m/n/10 pound in-ter-est, in-fla-tion, and di-ver-si-fi-ca-tion items. R
 e-sponses were coded as cor-rect/incorrect and summed
@@ -612,33 +612,33 @@ Overfull \hbox (1.05963pt too wide) in paragraph at lines 80--81
 pe-ri-ence, ed-u-ca-tion, and prior robo-advisor ex-pe-ri-ence, coded
  []
 
-[20]) (./sections/results_cfpb.tex (./tables/table_cfpb_gradient.tex) [21]
-(./tables/table_cfpb_concordance.tex) [22] (./tables/table_cfpb_emfd.tex)
-[23]
-<../output/delegative_evaluative_scatter.png, id=741, 578.16pt x 433.62pt>
+[20]) (./sections/results_cfpb.tex [21] (./tables/table_cfpb_gradient.tex)
+(./tables/table_cfpb_concordance.tex [22]) (./tables/table_cfpb_emfd.tex)
+[23] [24]
+<../output/delegative_evaluative_scatter.png, id=749, 578.16pt x 433.62pt>
 File: ../output/delegative_evaluative_scatter.png Graphic file (type png)
 <use ../output/delegative_evaluative_scatter.png>
 Package pdftex.def Info: ../output/delegative_evaluative_scatter.png  used on i
 nput line 66.
 (pdftex.def)             Requested size: 305.33789pt x 229.00368pt.
- [24] [25 <../output/delegative_evaluative_scatter.png>])
-(./sections/results_prolific.tex (./tables/table_exclusion.tex) [26]
+ [25 <../output/delegative_evaluative_scatter.png>]) [26]
+(./sections/results_prolific.tex (./tables/table_exclusion.tex)
 (./tables/table_descriptives.tex) [27] (./tables/table_correlations.tex)
-(./tables/table_anova.tex) [28] (./tables/table_reg_h4.tex) [29]
-(./tables/table_reg_h3.tex) [30] (./tables/table_comprehension.tex) [31])
-(./sections/discussion.tex [32] [33] [34]
+[28] (./tables/table_anova.tex) (./tables/table_reg_h4.tex) [29]
+(./tables/table_reg_h3.tex) [30] [31] (./tables/table_comprehension.tex))
+[32] (./sections/discussion.tex [33] [34] [35]
 Overfull \hbox (0.45892pt too wide) in paragraph at lines 51--52
 []\T1/ppl/m/n/10 The CFPB company-level anal-y-sis pro-vides sug-ges-tive nat-u
 -ral-is-tic ev-i-dence for this mech-a-nism. Among
  []
 
-[35]) (./sections/conclusion.tex [36]) [37] [38] (./main.bbl [39
+[36]) (./sections/conclusion.tex [37]) [38] (./main.bbl [39
 
-] [40])
-[41] (./sections/appendix_cfpb_prompt.tex [42
+] [40]) [41]
+(./sections/appendix_cfpb_prompt.tex [42
 
-])
-(./sections/appendix_prolific.tex [43]
+]) (./sections/appendix_prolific.tex
+[43]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\begingroup' on input line 5.
@@ -689,11 +689,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  14653 strings out of 476182
  238482 string characters out of 5795595
- 1944975 words of memory out of 5000000
+ 1946975 words of memory out of 5000000
  36067 multiletter control sequences out of 15000+600000
  614624 words of font info for 159 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,14n,79p,1788b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,1835b,623s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/codespace/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900
 .600pk> </home/codespace/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ect
 t1000.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi1
@@ -704,10 +704,10 @@ ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (59 pages, 472088 bytes).
+Output written on main.pdf (59 pages, 475306 bytes).
 PDF statistics:
- 1268 PDF objects out of 1440 (max. 8388607)
- 1091 compressed objects within 11 object streams
+ 1271 PDF objects out of 1440 (max. 8388607)
+ 1094 compressed objects within 11 object streams
  288 named destinations out of 1000 (max. 500000)
  654 words of extra memory for PDF output out of 10000 (max. 10000000)
 
