@@ -1,4 +1,4 @@
-The following prompt was used identically for both Claude Sonnet (Anthropic) and GPT-4o (OpenAI) classifications. Each model received the prompt once per narrative, with temperature set to $0.0$ (deterministic output) and a maximum output length of 300 tokens. No product type or company name was passed to the classifier, preventing hypothesis leakage. The prompt consists of a system prompt defining the construct framework and a user prompt specifying the required output format.
+The following prompt was used identically for both Claude 3.5 Sonnet (Anthropic) and GPT-4o (OpenAI) classifications. Each model received the prompt once per narrative, with temperature set to $0.0$ (deterministic output) and a maximum output length of 300 tokens. No product type or company name was passed to the classifier, preventing hypothesis leakage. The prompt consists of a system prompt defining the construct framework and a user prompt specifying the required output format.
 
 \subsection{System Prompt}
 
@@ -88,9 +88,9 @@ Both models were configured with identical parameters to ensure comparability. \
 \label{tab:classify_params}
 \begin{tabular}{lll}
 \toprule
-Parameter & Claude Sonnet & GPT-4o \\
+Parameter & Claude 3.5 Sonnet & GPT-4o \\
 \midrule
-Model version & \texttt{claude-sonnet-4-5-20250929} & \texttt{gpt-4o} \\
+Model version & \texttt{claude-3-5-sonnet-20241022} & \texttt{gpt-4o} \\
 Temperature & 0.0 & 0.0 \\
 Max output tokens & 300 & 300 \\
 Concurrent requests & 20 & 5 \\

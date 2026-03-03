@@ -107,6 +107,11 @@ Landis, J.~R. and Koch, G.~G. (1977).
 \newblock The measurement of observer agreement for categorical data.
 \newblock {\em Biometrics}, 33(1):159--174.
 
+\bibitem[Lee and See, 2004]{LeeSee2004}
+Lee, J.~D. and See, K.~A. (2004).
+\newblock Trust in automation: Designing for appropriate reliance.
+\newblock {\em Human Factors}, 46(1):50--80.
+
 \bibitem[Logg et~al., 2019]{LoggMinsonMoore2019}
 Logg, J.~M., Minson, J.~A., and Moore, D.~A. (2019).
 \newblock Algorithm appreciation: People prefer algorithmic to human judgment.
@@ -129,6 +134,12 @@ McAllister, D.~J. (1995).
   cooperation in organizations.
 \newblock {\em Academy of Management Journal}, 38(1):24--59.
 
+\bibitem[Muir, 1994]{Muir1994}
+Muir, B.~M. (1994).
+\newblock Trust in automation: {P}art {I}. {T}heoretical issues in the study of
+  trust and human intervention in automated systems.
+\newblock {\em Ergonomics}, 37(11):1905--1922.
+
 \bibitem[Nickel, 2012]{Nickel2012}
 Nickel, P.~J. (2012).
 \newblock Trust in technological systems.
@@ -145,6 +156,11 @@ O'Neill, O. (2014).
 \newblock In Morris, N. and Vines, D., editors, {\em Capital Failure:
   Rebuilding Trust in Financial Services}. Oxford University Press, Oxford.
 
+\bibitem[Pettit, 1995]{Pettit1995}
+Pettit, P. (1995).
+\newblock The cunning of trust.
+\newblock {\em Philosophy \& Public Affairs}, 24(3):202--225.
+
 \bibitem[Rossi and Utkus, 2020]{RossiUtkus2020}
 Rossi, A.~G. and Utkus, S.~P. (2020).
 \newblock Who benefits from robo-advising? {E}vidence from machine learning.
@@ -154,5 +170,10 @@ Rossi, A.~G. and Utkus, S.~P. (2020).
 Sapienza, P. and Zingales, L. (2012).
 \newblock A trust crisis.
 \newblock {\em International Review of Finance}, 12(2):123--131.
+
+\bibitem[Strawson, 1962]{Strawson1962}
+Strawson, P.~F. (1962).
+\newblock Freedom and resentment.
+\newblock {\em Proceedings of the British Academy}, 48:1--25.
 
 \end{thebibliography}

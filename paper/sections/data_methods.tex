@@ -15,9 +15,9 @@ We sampled 9,000 consumer complaint narratives from the CFPB database, equally d
 
 \subsubsection{Classification Procedure}
 
-Each narrative was independently classified by two large language models --- Claude Sonnet (Anthropic) and GPT-4o (OpenAI) --- using identical classification prompts. The prompts defined the evaluative and delegative trust constructs using language drawn from the theoretical framework and asked each model to provide three outputs for each narrative: (a)~a categorical classification (evaluative, delegative, or unclassifiable), (b)~continuous scores on each dimension (0--1 scale), and (c)~a confidence rating (0--1 scale). The dual-model approach serves as an automated inter-rater reliability check: agreement between independently developed language models, trained on different data and using different architectures, provides stronger evidence for classification validity than either model alone.
+Each narrative was independently classified by two large language models --- Claude 3.5 Sonnet (Anthropic; \texttt{claude-3-5-sonnet-20241022}) and GPT-4o (OpenAI) --- using identical classification prompts. The prompts defined the evaluative and delegative trust constructs using language drawn from the theoretical framework and asked each model to provide three outputs for each narrative: (a)~a categorical classification (evaluative, delegative, or unclassifiable), (b)~continuous scores on each dimension (0--1 scale), and (c)~a confidence rating (0--1 scale). The dual-model approach serves as an automated inter-rater reliability check: agreement between independently developed language models, trained on different data and using different architectures, provides stronger evidence for classification validity than either model alone.
 
-Of the 9,000 narratives, Claude Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,943 (99.4\%). All dual-model analyses use the $N = 8{,}943$ narratives successfully classified by both models.
+Of the 9,000 narratives, Claude 3.5 Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,943 (99.4\%). All dual-model analyses use the $N = 8{,}943$ narratives successfully classified by both models.
 
 \subsubsection{Moral Foundations Validation}
 
@@ -25,7 +25,7 @@ As an independent construct validity check, all narratives were scored using the
 
 \subsubsection{Human Validation}
 
-One author (the first author) independently classified a confidence-stratified subsample of 100 narratives to assess whether AI classifications capture distinctions recognizable to a human coder. The subsample was stratified by Sonnet confidence level (30 low-confidence, 40 medium, 30 high-confidence) to ensure representation across the classification difficulty spectrum.
+I independently classified a confidence-stratified subsample of 100 narratives to assess whether AI classifications capture distinctions recognizable to a human coder. Both models reported high confidence overall: Sonnet's mean confidence was 0.882 and GPT-4o's was 0.877, with 68.8\% of Sonnet classifications at confidence $\geq 0.90$. To ensure the human validation sample included difficult cases, the subsample was stratified by Sonnet confidence level (30 low-confidence, 40 medium, 30 high-confidence) at relatively generous thresholds rather than sampling proportionally from the confidence distribution.
 
 \subsection{Prolific Experiment}
 \label{sec:methods_prolific}
@@ -33,14 +33,14 @@ One author (the first author) independently classified a confidence-stratified s
 \subsubsection{Design}
 \label{sec:methods_design}
 
-The experiment employed a between-subjects design with three conditions. Participants were randomly assigned to encounter a hypothetical robo-advisory platform (WealthPath) under one of three framings: fiduciary/relationship (Condition~A), performance/analytics (Condition~B), or neutral control (Condition~C). All participants then experienced an identical adverse performance event before completing dependent measures. The study was pre-registered at AsPredicted (\#275,531).
+The experiment employed a between-subjects design with three conditions. Participants were randomly assigned to encounter a hypothetical robo-advisory platform (WealthPath) under one of three framings: fiduciary/\allowbreak relationship (Condition~A), performance/\allowbreak analytics (Condition~B), or neutral control (Condition~C). All participants then experienced an identical adverse performance event before completing dependent measures. The study was pre-registered at AsPredicted (\#275,531).
 
 \subsubsection{Participants}
 \label{sec:methods_participants}
 
 Demographics and the financial literacy battery were administered before condition assignment to prevent the vignette from priming financial literacy responses.
 
-We recruited 471 participants through the Prolific platform, targeting U.S.-based adults with balanced demographic representation. After pre-registered exclusions, the final sample comprised $N = 354$ participants (Condition~A: $n = 115$; Condition~B: $n = 127$; Condition~C: $n = 112$). The exclusion funnel proceeded as follows: 471 initial completes $\to$ 468 (excluding survey previews) $\to$ 451 (excluding pilot responses) $\to$ 446 (Prolific platform matching) $\to$ 357 (minimum completion time) $\to$ 354 (dual attention/comprehension check). Robustness analyses using stricter exclusion criteria (attention-only: $N = 342$; comprehension-only: $N = 289$) produce identical patterns of significance.
+We recruited 471 participants through the Prolific platform, targeting U.S.-based adults with balanced demographic representation. After pre-registered exclusions, the final sample comprised $N = 354$ participants (Condition~A: $n = 115$; Condition~B: $n = 127$; Condition~C: $n = 112$). The exclusion funnel proceeded as follows: 471 initial completes $\to$ 468 (excluding survey previews by the author during instrument testing) $\to$ 451 (excluding pilot responses) $\to$ 446 (Prolific platform matching) $\to$ 357 (minimum completion time) $\to$ 354 (dual attention/comprehension check). Robustness analyses using stricter exclusion criteria (attention-only: $N = 342$; comprehension-only: $N = 289$) produce identical patterns of significance.
 
 \subsubsection{Materials}
 \label{sec:methods_materials}
@@ -49,7 +49,7 @@ We recruited 471 participants through the Prolific platform, targeting U.S.-base
 
 Critically, all three vignettes described the same technological agent --- no human advisors were introduced in any condition. This addresses a confound in earlier algorithm trust research where fiduciary framing was bundled with human agency.
 
-\paragraph{Adverse event.} All participants received an identical notification: their WealthPath portfolio declined 8.7\% during a quarter in which the S\&P~500 declined 8.0\%, producing a loss of \$870 on a \$10,000 investment. The 70-basis-point underperformance was designed to be attributionally ambiguous --- enough to register as underperformance for attentive evaluators, but close enough to the benchmark to be dismissible by delegative trusters.
+\paragraph{Adverse event.} All participants received an identical notification: their WealthPath portfolio declined 8.7\% during a quarter in which the S\&P~500 declined 8.0\%, producing a loss of \$870 on a \$10,000 investment. The 70-basis-point underperformance was designed to be attributionally ambiguous --- enough to register as underperformance for attentive evaluators, but close enough to the benchmark to be dismissible by delegative trustors.
 
 \subsubsection{Measures}
 \label{sec:methods_measures}
@@ -77,7 +77,7 @@ All items used a 7-point Likert scale (1 = Strongly Disagree to 7 = Strongly Agr
 
 \paragraph{Attention check} (1 item). A directed-choice item administered in the demographic battery prior to condition assignment, instructing participants to select a specific response option. Participants who failed were excluded per the pre-registered protocol.
 
-\paragraph{Demographics.} Age, income, investment experience, education, and Prior robo-advisor experience, coded as a binary variable derived from a multi-select investment experience item that also captured human advisor use, self-directed brokerage investing, and employer retirement plan participation.
+\paragraph{Demographics.} Age, income, investment experience, education, and prior robo-advisor experience, coded as a binary variable derived from a multi-select investment experience item that also captured human advisor use, self-directed brokerage investing, and employer retirement plan participation.
 
 \subsubsection{Analytic Strategy}
 \label{sec:methods_analysis}

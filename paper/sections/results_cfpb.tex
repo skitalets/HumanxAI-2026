@@ -7,7 +7,7 @@ The CFPB analysis provides naturalistic evidence for dimensional separability. W
 
 We sampled 9,000 consumer complaint narratives from the CFPB database, equally distributed across three product categories: mortgage ($n = 3{,}000$), checking and savings ($n = 3{,}000$), and credit card ($n = 3{,}000$). These categories were selected to vary in the degree to which the consumer--institution relationship involves delegation of discretionary authority. Mortgage relationships are long-duration, high-stakes, and involve ongoing servicing decisions that consumers cannot easily monitor --- conditions that our theoretical framework identifies as conducive to delegative trust. Credit card relationships, by contrast, are largely transactional: the consumer evaluates terms, monitors statements, and assesses performance on observable metrics. Checking and savings accounts fall between these poles.
 
-Each narrative was independently classified by two large language models --- Claude Sonnet (Anthropic) and GPT-4o (OpenAI) --- using identical prompts that defined the evaluative and delegative trust constructs and asked for (a) a categorical classification (evaluative, delegative, or unclassifiable), (b) continuous scores on each dimension (0--1), and (c) a confidence rating (0--1). Of the 9,000 narratives, Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,943 (99.4\%). Dual-model analyses use the $N = 8{,}943$ narratives classified by both models.
+Each narrative was independently classified by two large language models --- Claude 3.5 Sonnet (Anthropic) and GPT-4o (OpenAI) --- using identical prompts that defined the evaluative and delegative trust constructs and asked for (a) a categorical classification (evaluative, delegative, or unclassifiable), (b) continuous scores on each dimension (0--1), and (c) a confidence rating (0--1). Of the 9,000 narratives, Sonnet produced valid classifications for 8,991 (99.9\%) and GPT-4o for 8,943 (99.4\%). Dual-model analyses use the $N = 8{,}943$ narratives classified by both models.
 
 \subsection{Cross-Product Delegative Gradient}
 
@@ -41,7 +41,7 @@ Correlation patterns reinforce this interpretation (Table~\ref{tab:cfpb_emfd}). 
 
 \subsection{Human Validation}
 
-To assess whether the AI classifications capture distinctions recognizable to a human coder, one author (the first author) independently classified a confidence-stratified subsample of 100 narratives. Stratification ensured representation across confidence levels: 30 low-confidence, 40 medium, and 30 high-confidence narratives (based on Sonnet confidence bins).
+To assess whether the AI classifications capture distinctions recognizable to a human coder, I independently classified a confidence-stratified subsample of 100 narratives. Stratification ensured representation across confidence levels: 30 low-confidence, 40 medium, and 30 high-confidence narratives (based on Sonnet confidence bins).
 
 Categorical agreement was fair by conventional benchmarks: $\kappa = 0.264$ for human--Sonnet and $\kappa = 0.361$ for human--GPT-4o. The two AI models agreed more with each other ($\kappa = 0.590$) than either did with the human coder. However, the confidence-stratified pattern is dramatic and informative. At high confidence, human--Sonnet agreement reaches 93.3\% and human--GPT-4o reaches 90.0\%. At low confidence, agreement drops to 30.0\% and 50.0\%, respectively.
 
@@ -59,7 +59,7 @@ Across the full sample, delegative and evaluative continuous scores are moderate
 
 First, the correlation varies substantially across product types: mortgage $r = -.807$, checking/savings $r = -.589$, credit card $r = -.400$ (Sonnet). If the negative correlation reflected a true inverse relationship between the constructs, we would expect it to be stable across contexts. Instead, it tracks product complexity --- strongest where the complaint space is most constrained (mortgages, where nearly every complaint involves either servicing failures or relationship violations) and weakest where complaints are more heterogeneous (credit cards).
 
-Second, the scatter plot (Figure~\ref{fig:cfpb_scatter}) reveals that the correlation is partly driven by clustering at classification-typical regions rather than a smooth negative slope. Narratives cluster in a high-evaluative/low-delegative region and a high-delegative/moderate-evaluative region, with relatively sparse representation in the joint-high quadrant. This is consistent with the classification mechanics: when a narrative strongly expresses one trust mode, the classifier assigns lower scores to the other mode, producing a mechanical negative correlation within the classification system.
+Second, the scatter plot (Figure~\ref{fig:cfpb_scatter}) reveals that the correlation is partly driven by clustering at classifi\-cation-typical regions rather than a smooth negative slope. Narratives cluster in a high-evaluative/low-delegative region and a high-delegative/moderate-evaluative region, with relatively sparse representation in the joint-high quadrant. This is consistent with the classification mechanics: when a narrative strongly expresses one trust mode, the classifier assigns lower scores to the other mode, producing a mechanical negative correlation within the classification system.
 
 \begin{figure}[htbp]
 \centering
