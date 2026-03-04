@@ -1,2 +1,12 @@
 # Raw CFPB data
 data/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.toc
+*.bbl
+*.blg
+*.out
+*.pdf
+texput.log

@@ -3,7 +3,7 @@
 ## Overall Feedback
 
 - The 12pt font is larger than conventional for these drafts. Remove the 12pt parameter in main.tex.
-- Look for an opportunity or two to work in the "faithful machine" framing in the introduction and/or theoretical framework to make the payoff in the conclusion.
+- Look for an opportunity or two to work in the "faithful machine" framing in the introduction and/or theoretical framework to make the payoff in the conclusion. The natural insertion point is the end of the introduction where you preview the paper's structure — something about the conditions under which a machine could become a "faithful" advisor in the trust-theoretic sense.
 - Spelling of "truster" / "trustor" is not consistent throughout. I prefer "trustor". Please make this consistent.
 - Where we claim that this is the "first time" someone has applied philosophy of trust literature to finance, does that conflict with the fact that Carter et al. (2020) has investigated possible connections conceptually, if not experimentally?
 - Everywhere we mention Claude Sonnet, we should report the version number as we do with GPT-4o.
